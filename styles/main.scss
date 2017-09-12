@@ -2,6 +2,8 @@
 @import 'jquery.fancybox.min.css';
 @import 'owl.carousel.min.css';
 @import 'animate.min.css';
+@import 'ion.rangeSlider.css';
+@import 'ion.rangeSlider.skinHTML5.css';
 @font-face {
 	font-family: "Circe";
 	src: url("../fonts/CRC25.otf");
@@ -2954,6 +2956,10 @@ footer{
         .border{
             border: 15px solid #f8fafd;
             padding: 30px;
+            &.none{
+                border: none!important;
+                padding: 0!important;
+            }
         }
         .title{
             font-size: 30px;
@@ -3110,7 +3116,7 @@ footer{
                     content: '';
                     width: 11px;
                     height: 11px;
-                    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAICAYAAAAvOAWIAAAAY0lEQVQoU43PYRFAQBAG0KeJBlQQQQMVNBFBBA1UEEEEEcwZO3OYwf3dt99+V/j3aqzFD5vgjPYLB+wxvuELTA0CT+iwnbUeMMcjKjQoz47H6fxPeY1YSPgB8+QIGLDcE2O4A4SyEVlSKtvSAAAAAElFTkSuQmCC);
+                    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAICAYAAAAvOAWIAAAAY0lEQVQoU43PYRFAQBAG0KeJBlQQQQMVNBFBBA1UEEEEEcwZO3OYwf3dt99+V/j3aqzFD5vgjPYLB+wxvuELTA0CT+iwnbUeMMcjKjQoz47H6fxPeY1YSPgB8+QIGLDcE2O4A4SyEVlSKtvSAAAAAElFTkSuQmCC) no-repeat;
                     position: absolute;
                     top: 7px;
                     left: 5px;
@@ -3131,6 +3137,33 @@ footer{
             padding-left: 20px;
             display: block;
             width: 100%;
+        }
+    }
+    .radio_list{
+        background-color: #f8fafd;
+        display: inline-block;
+        border-radius: 3px;
+        overflow: hidden;
+        margin: 10px 0px;
+        .item{
+            display: inline-block;
+            line-height: 50px;
+            background-color: #f8fafd;
+            label{
+                line-height: 50px;
+                padding: 0px 35px;
+                display: inline-block;
+                font-size: 16px;
+                font-weight: 700;
+                cursor: pointer;
+            }
+            input{
+                display: none;
+                &:checked ~ label{
+                    background-color: #ffc924;
+                    border-radius: 3px;
+                }
+            }
         }
     }
 }
@@ -3379,6 +3412,193 @@ footer{
             input[type=submit]{
                 font-size: 18px;
                 margin-top: 30px;
+            }
+        }
+    }
+}
+.cs_go_placement_form{
+    .rank_list{
+        display: table;
+        margin: 30px 0px;
+        .item{
+            display: table-cell;
+            padding-right: 40px;
+            &:last-child{
+                padding-right: 0;
+            }
+        }
+    }
+    .border{
+        .block{
+            .cols{
+                display: table;
+                width: 100%;
+                margin: 20px 0px;
+                .col{
+                    display: table-cell;
+                    &:nth-child(1){
+                        width: 530px;
+                    }
+                    &:nth-child(2){
+                        padding-left: 50px;
+                    }
+
+                }
+            }
+        }
+        .checkbox{
+            float: left;
+            margin-top: 10px;
+        }
+        button[type=submit]{
+            border: none;
+            outline: none;
+            height: 53px;
+            line-height: 53px;
+            background-color: #ffc924;
+            border-radius: 3px;
+            color: #000000;
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+            display: inline-block;
+            padding: 0px 20px;
+            transition: .2s;
+            cursor: pointer;
+            float: right;
+            position: relative;
+            top: -5px;
+            span{
+                display: inline-block;
+                border-left: 2px solid #a17f17;
+                line-height: 16px;
+                margin-left: 10px;
+                padding-left: 15px;
+            }
+            &:hover{
+                background-color: #ffe400;
+            }
+        }
+    }    
+    .warning{
+        margin-top: 10px;
+        color: #000;
+        font-size: 13px;
+        padding-left: 35px;
+        line-height: 20px;
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABd0lEQVQ4T6VTwVGDQBT9D3a5Sgl0ENJBOjANSPDqkJFUYDqQDIxXARuwhFiBWIEpIeew8J3dkUhIxIN72WHZ/97/b98DDRbHoacavmemGUC+/s1MFUBbYWODJN/1S9D/qKMgIULIaNeysbd4yisDcBf6td3MwNaaQM8yLVZd3RHgEAX6ciWFFSPJ98PODFAcurVqNcnEyYqpPjMAmpmJXCcrw0uFw7NDFOQg2susjGFmVlwJAW/IfFjexLrYSV+SPojuRCneCQEfhh28G1767mytd5mVZu8vDQ6GBz27FNZ8qO5fAEZYq81RLxcs0+LkNTqmOgp+7cAQLBf8f4CxEVQUzjWTyPLXM8MdRxgRUatNRO6IPu7oMxoNQL5MS9NJt8wzNvwpbEx/jARcOWlxeyEbuoMTZ54YqSswVgbepY3VqJUbfiTmqZOVJmiXw0T8IFvrrR8mZbXXBMTEXGgLn4WpN5+nVBsz6ThjYkLE/AGirRBWMhT0C+7d4030QhxLAAAAAElFTkSuQmCC) no-repeat 3px 0px;
+    }
+}
+
+@media (min-width: 980px) and (max-width: 1139px) {
+    .cs_go_placement_form{
+        .border{
+            .block{
+                .cols{
+                    .col{
+                        display: table-cell;
+                        &:nth-child(1){
+                            width: 430px;
+                        }
+                    }
+                }
+            }
+        }    
+    }  
+}
+@media (min-width: 768px) and (max-width: 979px) {
+    .cs_go_placement_form{
+
+        .border{
+            padding: 20px!important;
+            .block{
+                .cols{
+                    display: table;
+                    width: 100%;
+                    margin: 30px 0px 0px;
+                    vertical-align: top;
+                    .col{
+                        display: table-cell;
+                        &:nth-child(1){
+                            width: 390px;
+                        }
+                        &:nth-child(2){
+                            padding-left: 50px;
+                            padding-top: 0;
+                            vertical-align: top;
+                        }
+    
+                    }
+                }
+            }
+            .checkbox{
+                float: none;
+                margin-top: 0px;
+            }
+            button[type=submit]{
+                float: none;
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .cs_go_placement_form{
+        .rank_list{
+            display: table;
+            margin: 30px 0px;
+            .item{
+                display: table-cell;
+                padding-right: 15px;
+                img{
+                    max-width: 100%;
+                    max-height: 30px;
+                }
+                &:last-child{
+                    padding-right: 0;
+                }
+            }
+        }
+        .title{
+            text-align: left;
+            font-size: 21px!important;
+        }
+        .border{
+            padding: 0px!important;
+            .block{
+                .cols{
+                    display: block;
+                    width: initial;
+                    margin: 30px 0px 0px;
+                    .col{
+                        display: block;
+                        width: initial;
+                        position: relative;
+                        text-align: center;
+                        &:nth-child(1){
+                            width: initial;
+                        }
+                        &:nth-child(2){
+                            padding-left: 0px;
+                            padding-top: 0;
+                        }
+    
+                    }
+                }
+            }
+            .checkbox{
+                float: none;
+                position: absolute;
+                top: 115px;
+                left: 0;
+                right: 0;
+            }
+            button[type=submit]{
+                float: none;
+                margin-top: 50px;
+            }
+            .warning{
+                margin-top: 60px;
+                text-align: left;
             }
         }
     }

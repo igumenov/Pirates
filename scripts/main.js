@@ -218,6 +218,19 @@ $(document).ready(function() {
     
 
     /* end tabs*/
+
+    $("#csgo_placement").ionRangeSlider({
+        hide_min_max: true,
+        keyboard: true,
+        min: 1,
+        max: 10,
+        type: 'single',
+        step: 1,
+        prefix: "Matches ",
+        grid: true,
+        grid_num: 10,
+        grid_snap: true
+    });
 });
 
 
