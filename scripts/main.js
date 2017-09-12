@@ -1,10 +1,10 @@
 $(document).ready(function() {  
-    new WOW({
+      new WOW({
         // offset: 500,
     }).init();
 
     $(window).bind('scroll', function() {
-        console.log($(window).scrollTop());
+        // console.log($(window).scrollTop());
         if ($(window).scrollTop() > 60) {
             $('header .top').addClass('fixed');
         }
@@ -201,15 +201,30 @@ $(document).ready(function() {
 
     /*tabs*/
     
-    $('#tabs-nav li:first-child').addClass('active');
-    $('#tabs-content .content').hide();
-    $('#tabs-content .content:first').show();
+    $('#tabs-nav.top li:first-child').addClass('active');
+    $('#tabs-content.top .content').hide();
+    $('#tabs-content.top .content:first').show();
     
     // click function
-    $('#tabs-nav li').click(function(){
-      $('#tabs-nav li').removeClass('active');
+    $('#tabs-nav.top li').click(function(){
+      $('#tabs-nav.top li').removeClass('active');
       $(this).addClass('active');
-      $('#tabs-content .content').hide();
+      $('#tabs-content.top .content').hide();
+      
+      var activeTab = $(this).find('a').attr('href');
+      $(activeTab).fadeIn();
+      return false;      
+    });
+    
+    $('#tabs-nav.children li:first-child').addClass('active');
+    $('#tabs-content.children .content').hide();
+    $('#tabs-content.children .content:first').show();
+    
+    // click function
+    $('#tabs-nav.children li').click(function(){
+      $('#tabs-nav.children li').removeClass('active');
+      $(this).addClass('active');
+      $('#tabs-content.children .content').hide();
       
       var activeTab = $(this).find('a').attr('href');
       $(activeTab).fadeIn();
@@ -231,6 +246,23 @@ $(document).ready(function() {
         grid_num: 10,
         grid_snap: true
     });
+    $("#hardstone_golden_heroes_slider").ionRangeSlider({
+        hide_min_max: true,
+        keyboard: true,
+        min: 1,
+        max: 500,
+        type: 'single',
+        step: 1,
+        postfix: " wins (0.49€/win)",
+        prefix: " ",
+        grid: true,
+        grid_num: 2,
+        grid_snap: false
+    });
+
+
+
+
 });
 
 

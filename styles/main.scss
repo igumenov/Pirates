@@ -3603,4 +3603,79 @@ footer{
         }
     }
 }
-@media (max-width: 330px) {}
+.hardstone_golden_heroes_form{
+    .heroes{
+        margin: 20px 0px;
+        .item{
+            display: inline-block;
+            margin-right: 14px;
+            vertical-align: top;
+            margin-bottom: 14px;
+            input{
+                display: none;
+                &:checked ~ label{
+                    &:before{
+                        content: '';
+                        display: block;
+                        border-radius: 50%;
+                        width: 93px;
+                        height: 94px;
+                        border: 4px solid #ffad00;
+                        position: absolute;
+                        top: -1px;
+                        left: -1px;
+                        transition: .2s;
+                    }
+                }
+            }
+            label{
+                display: block;
+                border-radius: 50%;
+                width: 100px;
+                height: 100px;
+                position: relative;
+                cursor: pointer;
+                transition: .2s;
+                &:before{
+                    content: '';
+                    display: block;
+                    border-radius: 50%;
+                    width: 93px;
+                    height: 94px;
+                    border: 4px solid #0b223c;
+                    position: absolute;
+                    top: -1px;
+                    left: -1px;
+                    transition: .2s;
+                }
+                &:hover{
+                    &:before{
+                        content: '';
+                        display: block;
+                        border: 4px solid #ffad00;
+                    }
+                }
+                img{
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+        }
+    }
+    .border{
+        .cols{
+            display: table;
+            width: 100%;
+            .col{
+                display: table-cell;
+                vertical-align: top;
+                &:nth-child(1){
+                    width: 300px;
+                }
+                .title{
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}
