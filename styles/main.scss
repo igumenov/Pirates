@@ -1045,8 +1045,9 @@ footer{
             display: block;
             width: 100%;
             cursor: pointer;
+            transition: .2s;
             &:hover{
-                box-shadow: 0 0px 19px rgba(0, 0, 0, 0.68);
+                background-color: #ffe400;
             }
         }
     }
