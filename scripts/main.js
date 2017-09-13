@@ -244,8 +244,14 @@ $(document).ready(function() {
         prefix: "Matches ",
         grid: true,
         grid_num: 10,
-        grid_snap: true
+        grid_snap: true,
+        onChange: function (data) {
+            var price = parseFloat((data.from*4.9).toFixed(3));
+            $('button[type=submit] span').html('€'+price);
+        },
     });
+
+    /*hardstone_golden_heroes*/
     $("#hardstone_golden_heroes_slider").ionRangeSlider({
         hide_min_max: true,
         keyboard: true,
@@ -257,8 +263,45 @@ $(document).ready(function() {
         prefix: " ",
         grid: true,
         grid_num: 2,
-        grid_snap: false
+        grid_snap: false,
+        onChange: function (data) {
+            var price = parseFloat((data.from*0.49).toFixed(3));
+            $('button[type=submit] span').html('€'+price);
+        },
     });
+    $("#hardstone_golden_leveling_slider").ionRangeSlider({
+        hide_min_max: true,
+        keyboard: true,
+        min: 1,
+        max: 60,
+        type: 'single',
+        step: 1,
+        postfix: " lebels (6€/level)",
+        prefix: " ",
+        grid: true,
+        grid_num: 4,
+        grid_snap: false,
+        onChange: function (data) {
+            var price = parseFloat((data.from*6).toFixed(3));
+            $('button[type=submit] span').html('€'+price);
+        },
+    });
+    $('.hardstone_golden_heroes_form .heroes .item label').click(function(){
+        var img = $(this).attr('data-img');
+        console.log(img);
+        $('.hardstone_golden_heroes_form .border .cols .col.img_col img').attr('src', img);
+    });
+
+    $('.product_page .product #tabs-nav li.heroes_tab').click(function(){
+        $('.hardstone_leveling').hide();
+        $('.hardstone_golden_heroes').show();
+    });
+    $('.product_page .product #tabs-nav li.levels_tab').click(function(){
+        $('.hardstone_leveling').show();
+        $('.hardstone_golden_heroes').hide();
+    });
+
+     /* //hardstone_golden_heroes*/
 
 
 
