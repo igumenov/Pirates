@@ -2895,6 +2895,102 @@ footer{
             height: 2px;
             margin: 20px 0px
         }
+        .steps{
+            position: relative;
+            height: 910px;
+            width: 890px;
+            margin: 0 auto;
+            .step{
+                position: absolute;
+                max-width: 220px;
+                &.step1{
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    .arrow{
+                        position: absolute;
+                        top: -333px;
+                        left: 100px;
+                        height: 310px;
+                        overflow: hidden;
+                        .step_arrow{
+                            transform: rotate(-15deg);
+                            transform-origin: 100% 100%;
+                        }
+                    }
+                }
+                &.step2{
+                    left: 50%;
+                    top: 0;
+                    transform: translateX(-50%);
+                    .arrow{
+                        position: absolute;
+                        top: 30px;
+                        left: -340px;
+                        .step_arrow{
+                            transform: rotate(77deg);
+                            top: 45px;
+                            left: 175px;
+                            transform-origin: 100% 100%;
+                        }
+                    }
+                }
+                &.step3{
+                    right: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    .arrow{
+                        position: absolute;
+                        top: 30;
+                        left: -340px;
+                        .step_arrow{
+                            transform: rotate(77deg);
+                            top: 45px;
+                            left: 175px;
+                            transform-origin: 100% 100%;
+                        }
+                    }
+                }
+                &.step4{
+                    left: 50%;
+                    bottom: 0;
+                    transform: translateX(-50%);
+                    .arrow{
+                        position: absolute;
+                        top: -310px;
+                        left: 90px;
+                        .step_arrow{
+                            transform: rotate(0deg);
+                            top: 45px;
+                            left: 175px;
+                            transform-origin: 100% 100%;
+                        }
+                    }
+                }
+                .step_number{
+                    color: #fff;
+                    font-size: 30px;
+                    font-weight: 700;
+                    width: 72px;
+                    height: 72px;
+                    line-height: 61px;
+                    background-color: #fb7204;
+                    border-radius: 50%;
+                    text-align: center;
+                    border: 7px solid #ffecb0;
+                    margin: 0 auto 15px;
+                }
+                .step_title{
+                    font-size: 20px;
+                    font-weight: 700;
+                    text-align: center;
+                }
+                p{
+                    font-size: 16px;
+                    text-align: center;
+                }
+            }
+        }
     }
 }
 @media (min-width: 768px) and (max-width: 979px) {
@@ -3147,4 +3243,18 @@ footer{
         }
     }
 }
+@media (max-width: 330px) {}
+
+/*Product_page */
+.product_page{
+    .container{
+        box-shadow: 4px 7px 65px rgba(0, 0, 0, 0.18);
+        border-radius: 3px;
+        background-color: #ffffff;        
+    }
+    
+}
+@media (min-width: 980px) and (max-width: 1139px) {}
+@media (min-width: 768px) and (max-width: 979px) {}
+@media (max-width: 767px) {}
 @media (max-width: 330px) {}
