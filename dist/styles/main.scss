@@ -980,18 +980,18 @@ footer{
             width: 100%;
             margin-bottom: 18px;
             padding-left: 60px;
-            background-color: #e8e8e8;
+            background-color: #f5f5f5;
             border-radius: 3px;
             border: none;
             outline: none;
             &.mail{
-                background: #e8e8e8 url(../images/modal_ico_mail.png) no-repeat 20px 20px;
+                background: #f5f5f5 url(../images/modal_ico_mail.png) no-repeat 20px 20px;
             }
             &.pass{
-                background: #e8e8e8 url(../images/modal_ico_key.png) no-repeat 22px 23px;
+                background: #f5f5f5 url(../images/modal_ico_key.png) no-repeat 22px 23px;
             }
             &.user{
-                background: #e8e8e8 url(../images/modal_ico_user.png) no-repeat 20px 20px;
+                background: #f5f5f5 url(../images/modal_ico_user.png) no-repeat 20px 20px;
             }
         }
         .checkbox{
@@ -1045,8 +1045,9 @@ footer{
             display: block;
             width: 100%;
             cursor: pointer;
+            transition: .2s;
             &:hover{
-                box-shadow: 0 0px 19px rgba(0, 0, 0, 0.68);
+                background-color: #ffe400;
             }
         }
     }
