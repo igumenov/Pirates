@@ -276,7 +276,7 @@ $(document).ready(function() {
         max: 60,
         type: 'single',
         step: 1,
-        postfix: " lebels (6€/level)",
+        postfix: " levels (6€/level)",
         prefix: " ",
         grid: true,
         grid_num: 4,

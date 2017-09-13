@@ -3121,6 +3121,13 @@ footer{
                 p{
                     line-height: 28px;
                     font-size: 16px;
+                    a{
+                        color: #000;
+                        transition: .2s;
+                        &:hover{
+                            text-decoration: none;
+                        }
+                    }
                 }
             }
         }
@@ -3703,6 +3710,7 @@ footer{
         }
     }
 }
+/*Hardstone golden herose page*/
 .hardstone_golden_heroes_form{
     padding-bottom: 40px;
     .heroes{
@@ -3950,7 +3958,136 @@ footer{
         }
     }
 }
+/* //Hardstone golden herose page*/
+
+/*Hardstone keys page*/
+.hardstone_keys{
+    padding-bottom: 40px;
+    .items{
+        margin-bottom: 40px;
+        border-bottom: 1px solid #e8e8e8;
+        padding-bottom: 10px;
+        .item{
+            width: 33.3333%;
+            float: left;
+            label{
+                display: block;
+                padding: 20px;
+                border: 5px solid #fff;
+                text-align: center;
+                cursor: pointer;
+                transition: .2s;
+                img{
+                    height: 70px;
+                }
+                &:hover{
+                    border: 5px solid #ffc924;
+                }
+            }
+            input{
+                display: none;
+                &:checked ~ label{
+                    border: 5px solid #ffc924;
+                }
+            }
+        }
+    }
+    .table{
+        display: table;
+        width: 100%;
+        margin-top: 0px;
+        .td{
+            display: table-cell;
+            vertical-align: top;
+            padding: 0px 20px;
+            &:nth-child(2){
+                text-align: right;
+            }
+            &:nth-child(3){
+                width: 390px;
+                .eta{
+                    float: right;
+                    margin-left: 20px;
+                    margin-top: 15px;
+                    font-weight: 700;
+                }
+            }
+            p{
+                text-align: center;
+                font-weight: 700;
+                position: relative;
+                top: 10px;
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .hardstone_keys{
+        padding-bottom: 40px;
+        .items{
+            margin-bottom: 25px;
+            border-bottom: 1px solid #e8e8e8;
+            padding-bottom: 10px;
+            .item{
+                width: 50%;
+                label{
+                    padding: 20px;
+                    img{
+                        height: 30px;
+                    }
+                }
+            }
+        }
+        .table{
+            display: flex;
+            flex-wrap: wrap;
+            .td{
+                display: block;
+                width: 100%;
+                padding: 0;
+                &:nth-child(1){                                
+                    order: 2;
+                    width: 100%;
+                }
+                &:nth-child(2){                                
+                    order: 1;
+                    width: 100%;
+                    text-align: center;
+                }
+                &:nth-child(3){                                
+                    order: 0;
+                    width: 100%;
+                    text-align: center;
+
+                    button{
+                        float: none;
+                    }
+                    .eta{
+                        float: none;
+                        margin-bottom: 15px;
+                        margin-top: 0;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+}
 @media (max-width: 330px) {}
+/*Hardstone keys page*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*Product_page */
 .product_page{
