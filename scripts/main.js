@@ -304,6 +304,35 @@ $(document).ready(function() {
      /* //hardstone_golden_heroes*/
 
 
+     /* hardstone_rank_boosting*/
+    $(".hardstone_rank_boosting .slide_from.owl-carousel").owlCarousel({
+        items: 1,
+        nav:true,
+        loop: false,
+        dots: false,
+        navText: [,],
+        onChange: function(event){
+            $(".hardstone_rank_boosting .slide_to.owl-carousel").owlCarousel({
+                items: 1,
+                nav:true,
+                loop: false,
+                dots: false,
+                navText: [,],
+                onInitialized: function(e){
+                    $(this).trigger('to.owl.carousel', [event.item.index+2, 300]);
+                    console.log(event.item.index);
+                }
+            }
+            ).trigger('to.owl.carousel', [event.item.index+1, 300]);
+        },
+    });
+    // $(".hardstone_rank_boosting .slide_to.owl-carousel").owlCarousel({
+    //     items: 1,
+    //     nav:true,
+    //     loop: false,
+    //     dots: false,
+    //     navText: [,],
+    // });
 
 
 });
