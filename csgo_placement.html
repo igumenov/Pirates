@@ -135,7 +135,7 @@
                     <ul>
                         <li><a href="#">Main</a></li>
                         <li><a href="#">CS:GO</a></li>
-                        <li>CSGO:Rank Boosting</li>
+                        <li>CSGO:Placement matches</li>
                     </ul>
                 </div>
 			</div>	
@@ -143,9 +143,9 @@
         <div class="product_page">
             <div class="container">
                 <div class="product">
-					<div class="border">
+					<div class="border none">
 						<div class="title">
-							CSGO:Rank Boosting
+                            Placement matches
 							<div class="icons clearfix">
 								<div class="ico">
 									<img src="./images/product_ico_1.png" alt="">
@@ -181,69 +181,50 @@
 							</div>
 						</div>
 
-						<div class="cs_go_rank_form">
+						<div class="cs_go_placement_form">
 							<form action="">
-								<div class="cols clearfix">
-									<div class="col">
-										<div class="img">
-											<img src="./images/cs_go_rank_form_1.png" alt="">
-										</div>
-										<p><b>Select your current rank:</b></p>
-										<div class="drop-menu">
-											<div class="select">
-												<span>Silver II</span>
-												<i class="fa fa-chevron-down"></i>
-											</div>
-											<input type="hidden" name="gen7der">
-											<ul class="dropeddown">
-												<li id="male">Silver II</li>
-												<li id="male">Silver II</li>
-												<li id="male">Silver II4</li>
-												<li id="male">Silver II5</li>
-											</ul>
-										</div>
-										<div class="checkbox">
-											<input type="checkbox" id="remember">
-											<label for="remember">Duo/Lobby with booster</label>
-										</div>
-										<div class="checkbox">
-											<input type="checkbox" id="remember2">
-											<label for="remember2">+1 Win Extra</label>
-										</div>
-									</div>
-									<div class="col">
-										<div class="img">
-											<img src="./images/cs_go_rank_form_2.png" alt="">
-										</div>
-										<p>&nbsp;</p>
-										<div class="drop-menu">
-											<div class="select">
-												<span>Global Elite</span>
-												<i class="fa fa-chevron-down"></i>
-											</div>
-											<input type="hidden" name="gen7der">
-											<ul class="dropeddown">
-												<li id="male">Global Elite</li>
-												<li id="male">Global Elite 2</li>
-												<li id="male">Global Elite 3</li>
-												<li id="male">Global Elite 4</li>
-											</ul>
-										</div>
-										<div class="input_row">
-											<input type="text" placeholder="Promotional Code">
-										</div>
-									</div>
-									<div class="col">
-										<div class="price"><span>Price:</span><br/>308€</div>
-										<input type="submit" value="Pay with paypal/G2A pay">
-									</div>
-								</div>
+								<div class="radio_list">
+                                    <div class="item">
+                                        <input type="radio" name="mode" id="item1" checked>
+                                        <label for="item1">Pilot</label>
+                                    </div>
+                                    <div class="item">
+                                        <input type="radio" name="mode" id="item2">
+                                        <label for="item2">Self-play</label>
+                                    </div>
+                                </div>
+                                <div class="rank_list">
+                                    <div class="item">
+                                        <img src="./images/cs_go_placement_ico_1.png" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="./images/cs_go_placement_ico_2.png" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="./images/cs_go_placement_ico_3.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="border">
+                                    <div class="block">
+                                        <div class="title">Select your number of mathes</div>
+                                        <div class="cols">
+                                            <div class="col">
+                                                <input type="text" id="csgo_placement" name="example_name" value="3" />
+                                            </div>
+                                            <div class="col">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" id="Express">
+                                                    <label for="Express">Express</label>
+                                                </div>
+                                                <button type="submit">Pay now <span>€16.00</span></button>
+                                                <div class="clearfix"></div>
+                                                <div class="warning">Choosing EXPRESS will make you our top triprity!</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 							</form>
 						</div>
-
-
-
-
 					</div>
 					<div class="row_products product_page_slider">
 						<div class="block_title">Related products</div>
@@ -424,6 +405,7 @@
 		<script src="scripts/jquery.fancybox.min.js"></script>
 		<script src="scripts/owl.carousel.min.js"></script>
 		<script src="scripts/wow.min.js"></script>
+		<script src="scripts/ion.rangeSlider.min.js"></script>
 		<script src="scripts/main.js"></script>
 	</body>
 </html>
