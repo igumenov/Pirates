@@ -1,3 +1,11 @@
+$(document).mouseup(function (e){
+    var block = $(".top_popup");
+    if (!block.is(e.target)
+        && block.has(e.target).length === 0) {
+        block.fadeOut();
+    }
+});
+
 $(document).ready(function() {  
       new WOW({
         // offset: 500,
@@ -23,6 +31,9 @@ $(document).ready(function() {
         event.preventDefault();
         $('.top_popup').fadeOut();
     });
+    
+
+    
     /* /// */
     $("[data-fancybox]").fancybox({
         autoFocus : true,
@@ -275,7 +286,7 @@ $(document).ready(function() {
         max: 60,
         type: 'single',
         step: 1,
-        postfix: " lebels (6€/level)",
+        postfix: " levels (6€/level)",
         prefix: " ",
         grid: true,
         grid_num: 4,
@@ -303,6 +314,35 @@ $(document).ready(function() {
      /* //hardstone_golden_heroes*/
 
 
+     /* hardstone_rank_boosting*/
+    $(".hardstone_rank_boosting .slide_from.owl-carousel").owlCarousel({
+        items: 1,
+        nav:true,
+        loop: false,
+        dots: false,
+        navText: [,],
+        onChange: function(event){
+            $(".hardstone_rank_boosting .slide_to.owl-carousel").owlCarousel({
+                items: 1,
+                nav:true,
+                loop: false,
+                dots: false,
+                navText: [,],
+                onInitialized: function(e){
+                    $(this).trigger('to.owl.carousel', [event.item.index+2, 300]);
+                    console.log(event.item.index);
+                }
+            }
+            ).trigger('to.owl.carousel', [event.item.index+1, 300]);
+        },
+    });
+    // $(".hardstone_rank_boosting .slide_to.owl-carousel").owlCarousel({
+    //     items: 1,
+    //     nav:true,
+    //     loop: false,
+    //     dots: false,
+    //     navText: [,],
+    // });
 
 
 });

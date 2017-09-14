@@ -1,0 +1,17 @@
+[
+  {
+    "type": "node-sass@4.5.3::map",
+    "inputSha": [
+      {
+        "file": "styles\\main.scss",
+        "sha": "f0db9b37cca5e49c496d7866f920ed0875068d9d"
+      }
+    ],
+    "outputSha": "4cbe3b18eb0115bcd71b0b4ecf335b456636c4c0",
+    "input": "styles\\main.scss",
+    "output": [
+      "styles\\main.css.map",
+      "styles\\main.css"
+    ]
+  }
+]

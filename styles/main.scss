@@ -193,6 +193,9 @@ body#points{
 body#cs_go{
     background: url('../images/cs_go_bg.png') no-repeat top  center;
 }
+body#hardstone{
+    background: url('../images/hardstone_bg.png') no-repeat top  center;
+}
 
 
 
@@ -977,18 +980,18 @@ footer{
             width: 100%;
             margin-bottom: 18px;
             padding-left: 60px;
-            background-color: #e8e8e8;
+            background-color: #f5f5f5;
             border-radius: 3px;
             border: none;
             outline: none;
             &.mail{
-                background: #e8e8e8 url(../images/modal_ico_mail.png) no-repeat 20px 20px;
+                background: #f5f5f5 url(../images/modal_ico_mail.png) no-repeat 20px 20px;
             }
             &.pass{
-                background: #e8e8e8 url(../images/modal_ico_key.png) no-repeat 22px 23px;
+                background: #f5f5f5 url(../images/modal_ico_key.png) no-repeat 22px 23px;
             }
             &.user{
-                background: #e8e8e8 url(../images/modal_ico_user.png) no-repeat 20px 20px;
+                background: #f5f5f5 url(../images/modal_ico_user.png) no-repeat 20px 20px;
             }
         }
         .checkbox{
@@ -1042,8 +1045,9 @@ footer{
             display: block;
             width: 100%;
             cursor: pointer;
+            transition: .2s;
             &:hover{
-                box-shadow: 0 0px 19px rgba(0, 0, 0, 0.68);
+                background-color: #ffe400;
             }
         }
     }
@@ -3121,6 +3125,13 @@ footer{
                 p{
                     line-height: 28px;
                     font-size: 16px;
+                    a{
+                        color: #000;
+                        transition: .2s;
+                        &:hover{
+                            text-decoration: none;
+                        }
+                    }
                 }
             }
         }
@@ -3703,6 +3714,7 @@ footer{
         }
     }
 }
+/*Hardstone golden herose page*/
 .hardstone_golden_heroes_form{
     padding-bottom: 40px;
     .heroes{
@@ -3950,7 +3962,417 @@ footer{
         }
     }
 }
+/* //Hardstone golden herose page*/
+
+/*Hardstone keys page*/
+.hardstone_keys{
+    padding-bottom: 40px;
+    .items{
+        margin-bottom: 40px;
+        border-bottom: 1px solid #e8e8e8;
+        padding-bottom: 10px;
+        .item{
+            width: 33.3333%;
+            float: left;
+            label{
+                display: block;
+                padding: 20px;
+                border: 5px solid #fff;
+                text-align: center;
+                cursor: pointer;
+                transition: .2s;
+                img{
+                    height: 70px;
+                }
+                &:hover{
+                    border: 5px solid #ffc924;
+                }
+            }
+            input{
+                display: none;
+                &:checked ~ label{
+                    border: 5px solid #ffc924;
+                }
+            }
+        }
+    }
+    .table{
+        display: table;
+        width: 100%;
+        margin-top: 0px;
+        .td{
+            display: table-cell;
+            vertical-align: top;
+            padding: 0px 20px;
+            &:nth-child(2){
+                text-align: right;
+            }
+            &:nth-child(3){
+                width: 390px;
+                .eta{
+                    float: right;
+                    margin-left: 20px;
+                    margin-top: 15px;
+                    font-weight: 700;
+                }
+            }
+            p{
+                text-align: center;
+                font-weight: 700;
+                position: relative;
+                top: 10px;
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .hardstone_keys{
+        padding-bottom: 40px;
+        .items{
+            margin-bottom: 25px;
+            border-bottom: 1px solid #e8e8e8;
+            padding-bottom: 10px;
+            .item{
+                width: 50%;
+                label{
+                    padding: 20px;
+                    img{
+                        height: 30px;
+                    }
+                }
+            }
+        }
+        .table{
+            display: flex;
+            flex-wrap: wrap;
+            .td{
+                display: block;
+                width: 100%;
+                padding: 0;
+                &:nth-child(1){                                
+                    order: 2;
+                    width: 100%;
+                }
+                &:nth-child(2){                                
+                    order: 1;
+                    width: 100%;
+                    text-align: center;
+                }
+                &:nth-child(3){                                
+                    order: 0;
+                    width: 100%;
+                    text-align: center;
+
+                    button{
+                        float: none;
+                    }
+                    .eta{
+                        float: none;
+                        margin-bottom: 15px;
+                        margin-top: 0;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+}
 @media (max-width: 330px) {}
+/*Hardstone keys page*/
+
+
+/*Hardstone Rank boosting page*/
+.hardstone_rank_boosting{
+    padding-bottom: 40px;
+    .cols{
+        display: table;
+        width: 100%;
+        .col{
+            display: table-cell;
+            vertical-align: top;
+            &:nth-child(1){
+                width: 280px;
+                padding-right: 40px;
+                .item{
+                    position: relative;
+                    &:before{
+                        content: '';
+                        width: 253px;
+                        height: 98px;
+                        background: url('../images/ico_hs_to.png') no-repeat;
+                        position: absolute;
+                        top: 33px;
+                        left: 55px;
+                        display: block;
+                    }
+                }
+            }
+            &:nth-child(2){
+                width: 280px;
+            }
+            &:nth-child(3){    
+                text-align: right;             
+                .item{
+                    width: initial;
+                }   
+                .checkbox{
+                    display: inline-block;
+                    margin-right: 20px;
+                }   
+                .warning{
+                    text-align: left;
+                    display: inline-block;
+                }         
+            }
+            .item{
+                text-align: center;
+                width: 140px;
+                margin: 0 auto;
+                margin-bottom: 40px;
+                img{
+                    width: initial;
+                    display: inline;
+                }
+                .slide_from{}
+                .owl-nav{
+                    .owl-prev{
+                        width: 14px;
+                        height: 14px;
+                        display: block;
+                        position: absolute;
+                        left: -35px;
+                        top: 72px;
+                        border-left: 3px solid #27556c;
+                        border-top: 3px solid #27556c;
+                        transform: rotate(-45deg);
+                        &.disabled{
+                            display: none;
+                        }
+                        &:hover{
+                            margin-left: -5px;
+                            transition: .2s;
+                        }
+                    }
+                    .owl-next{
+                        width: 14px;
+                        height: 14px;
+                        display: block;
+                        position: absolute;
+                        right: -35px;
+                        top: 72px;
+                        border-left: 3px solid #27556c;
+                        border-top: 3px solid #27556c;
+                        transform: rotate(135deg);
+                        &.disabled{
+                            display: none;
+                        }
+                        &:hover{
+                            margin-right: -5px;
+                            transition: .2s;
+                        }
+                    }
+                }
+                .bg{
+                    float: right;
+                    background-color: #f6ebca;
+                    max-width: 435px;
+                    text-align: left;
+                    border-radius: 5px;
+                    padding-right: 255px;
+                    padding-left: 35px;
+                    padding-top: 34px;
+                    padding-bottom: 34px;
+                    font-weight: 700;
+                    line-height: 22px;
+                    margin-top: 30px;
+                    position: relative;
+                    margin-bottom: 125px;
+                    &:before{
+                        content: '';
+                        width: 200px;
+                        height: 205px;
+                        background: url('../images/ico_hs_cards.png') no-repeat top center;
+                        position: absolute;
+                        right: 26px;
+                        top: -42px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 980px) and (max-width: 1139px) {
+    .hardstone_rank_boosting .cols .col .item .bg{
+        width: 375px;
+    }
+    .hardstone_rank_boosting .cols .col .item .bg{
+        margin-bottom: 85px;
+    }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+    .hardstone_rank_boosting .cols{
+        display: block;
+        .col{
+            display: block;
+            width: 50%!important;
+            float: left;
+            margin-bottom: 60px;
+            &:nth-child(3){
+                float: none;
+                width: 100%!important;
+                margin-top: 100px;
+                clear: both;
+                text-align: center;
+                margin-bottom: 20px;
+                .item{
+                    margin-bottom: 70px;
+                }
+                .clearfix:nth-child(2){                    
+                    border-bottom: 1px solid #e8e8e8;
+                    margin: 40px 0px;
+                }
+                button{
+                    float: none;
+                }
+            }
+        }
+    }
+    .hardstone_rank_boosting .cols .col .item .bg{
+        float: none;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 767px) {
+    .hardstone_rank_boosting .cols{
+        display: block;
+        .col{
+            display: block;
+            width: 100%!important;
+            margin-bottom: 60px;
+            &:nth-child(1){
+                padding: 0;
+                .item:before{
+                    transform: rotate(90deg);
+                    top: 133px;
+                    left: -56px;
+                }
+                .drop{
+                    position: relative;
+                    top: 200px;
+                }
+            }
+            &:nth-child(2){
+                margin-top: -180px;
+                .drop{
+                    margin-top: 150px;
+                }
+            }
+            &:nth-child(3){
+                float: none;
+                width: 100%!important;
+                margin-top: 10px;
+                clear: both;
+                text-align: center;
+                margin-bottom: 20px;
+                .item{
+                    margin-bottom: 70px;
+                }
+                .clearfix:nth-child(2){                    
+                    border-bottom: 1px solid #e8e8e8;
+                    margin: 40px 0px;
+                }
+                button{
+                    float: none;
+                }
+            }
+        }
+    }
+    .hardstone_rank_boosting .cols .col .item .bg{
+        float: none;
+        margin: 0 auto;
+        padding-right: 145px;
+        padding-left: 20px;
+        margin-left: -20px;
+        margin-right: -20px;
+        border-radius: 0px;
+        &:before{
+            width: 151px;
+            height: 158px;
+            background-size: cover;
+            right: 10px;
+            top: -28px;
+        }
+    }
+    
+}
+/*Hardstone PVE adventures page*/
+.hardstone_pve_adventures{
+    .items{
+        margin-left: -15px;
+        margin-right: -15px;
+        .item{
+            display: inline-block;
+            width: 260px;
+            padding: 15px;
+            text-align: center;
+            margin-right: 5px;
+            transition: .2s;
+            margin-bottom: 30px;
+            &:hover{
+                box-shadow: 0 0 69px 18px rgba(0, 0, 0, 0.09);
+            }
+            .img{
+                margin-bottom: 15px;
+                img{
+                    height: 227px;
+                }
+            }
+            .name{
+                color: #000000;
+                font-weight: 700;
+                line-height: 24px;
+                font-size: 20px;
+                transition: .2s;
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+            .checkbox{
+                margin: 20px 0px 25px;
+            }
+            button{
+                float: none;
+                width: 100%;
+                display: block;
+            }
+            .warning{
+                text-align: left;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+    .hardstone_pve_adventures .items .item .img img{
+        height: 190px;
+    }
+    .hardstone_pve_adventures .items .item{
+        width: 240px;
+    }
+}
+@media (max-width: 767px) {
+    .hardstone_pve_adventures{
+        .items{
+            text-align: center;
+            margin: 0px;
+            .item{
+                width: 100%;
+            }
+        }
+    }
+}
+@media (max-width: 330px) {}
+
 
 /*cabinet_page */
 .cabinet_page{
