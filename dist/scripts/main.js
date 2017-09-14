@@ -352,7 +352,43 @@ $(document).ready(function() {
     //     navText: [,],
     // });
 
+    /* Wow artifact power slider */
+    $("#wow_artifact_power_slider").ionRangeSlider({
+        hide_min_max: true,
+        keyboard: true,
+        min: 1,
+        max: 15,
+        type: 'single',
+        step: 1,
+        prefix: "Match ",
+        grid: true,
+        grid_num: 15,
+        grid_snap: false,
+        onChange: function (data) {
+            var price = parseFloat((data.from*4.9).toFixed(3));
+            $('button[type=submit] span').html('€'+price);
+        },
+    });
+    /* // */
 
+    /* wow lwveling slider */
+    $("#wow_leveling_slider").ionRangeSlider({
+        hide_min_max: true,
+        keyboard: true,
+        min: 100,
+        max: 110,
+        type: 'double',
+        step: 1,
+        prefix: "Level ",
+        grid: true,
+        grid_num: 10,
+        grid_snap: false,
+        onChange: function (data) {
+            var price = parseFloat((data.from*4.9).toFixed(3));
+            $('button[type=submit] span').html('€'+price);
+        },
+    });
+    /* */
 });
 
 

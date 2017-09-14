@@ -163,6 +163,9 @@ body#cs_go {
 body#hardstone {
   background: url("../images/hardstone_bg.png") no-repeat top center; }
 
+body#wow {
+  background: url("../images/wow_bg.png") no-repeat top center; }
+
 header {
   padding-top: 59px; }
   header .top {
@@ -3590,5 +3593,328 @@ footer {
         width: 100%; }
   .cabinet_page .window .tabs_content .tab_content .referral_change p {
     float: none; } }
+
+/* WOW Artifact power Page */
+.wow_artifact_power {
+  padding-bottom: 40px; }
+  .wow_artifact_power .slide {
+    margin: 30px 0px 60px; }
+  .wow_artifact_power .cols {
+    display: table;
+    width: 100%; }
+    .wow_artifact_power .cols .col {
+      display: table-cell;
+      width: 50%;
+      vertical-align: middle; }
+      .wow_artifact_power .cols .col:nth-child(1) {
+        padding-right: 20px; }
+        .wow_artifact_power .cols .col:nth-child(1) p {
+          margin-top: 0; }
+      .wow_artifact_power .cols .col:nth-child(2) {
+        text-align: right; }
+    .wow_artifact_power .cols ul.checked {
+      margin: 0;
+      padding: 0;
+      list-style: none; }
+      .wow_artifact_power .cols ul.checked li {
+        color: #000;
+        font-size: 16px;
+        line-height: 22px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 27px;
+        background: url("../images/ico_ul.checked.png") no-repeat 0px 13px; }
+    .wow_artifact_power .cols .checked_list .checkbox {
+      display: inline-block;
+      margin-left: 13px; }
+    .wow_artifact_power .cols .btns {
+      margin-top: 20px; }
+      .wow_artifact_power .cols .btns .eta {
+        display: inline-block;
+        font-weight: 700;
+        margin-right: 15px;
+        vertical-align: top;
+        margin-top: 10px; }
+      .wow_artifact_power .cols .btns button {
+        float: none;
+        vertical-align: top;
+        display: inline-block; }
+
+@media (min-width: 980px) and (max-width: 1139px) {
+  .wow_artifact_power .cols .col {
+    width: initial; }
+    .wow_artifact_power .cols .col:nth-child(1) {
+      padding-right: 20px; }
+    .wow_artifact_power .cols .col:nth-child(2) {
+      width: 490px; } }
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .wow_artifact_power .cols {
+    display: table;
+    width: 100%; }
+    .wow_artifact_power .cols .col {
+      display: table-cell;
+      width: 50%;
+      vertical-align: middle; }
+      .wow_artifact_power .cols .col:nth-child(1) {
+        padding-right: 20px; }
+        .wow_artifact_power .cols .col:nth-child(1) p {
+          margin-top: 0; }
+      .wow_artifact_power .cols .col:nth-child(2) {
+        text-align: left; }
+    .wow_artifact_power .cols .checked_list .checkbox {
+      display: block;
+      margin-left: 13px; }
+  .wow_artifact_power .btns {
+    margin-top: 20px;
+    margin-left: 15px; }
+    .wow_artifact_power .btns .eta {
+      display: block;
+      margin-right: 0px;
+      margin-bottom: 15px; }
+    .wow_artifact_power .btns button {
+      float: none;
+      vertical-align: top;
+      display: inline-block; } }
+
+@media (max-width: 767px) {
+  .wow_artifact_power .radio_list {
+    display: table; }
+    .wow_artifact_power .radio_list .item {
+      display: table-cell;
+      vertical-align: top; }
+      .wow_artifact_power .radio_list .item label {
+        line-height: 25px;
+        padding: 10px;
+        text-align: center; }
+  .wow_artifact_power .cols {
+    display: block;
+    width: 100%; }
+    .wow_artifact_power .cols .col {
+      display: block;
+      width: 100%; }
+      .wow_artifact_power .cols .col:nth-child(1) {
+        padding-right: 0px; }
+      .wow_artifact_power .cols .col:nth-child(2) {
+        text-align: left;
+        padding-left: 0; }
+    .wow_artifact_power .cols .checked_list .checkbox {
+      display: inline-block;
+      margin-left: -5px;
+      margin-right: 15px; }
+      .wow_artifact_power .cols .checked_list .checkbox label {
+        padding-left: 32px; }
+    .wow_artifact_power .cols .btns {
+      margin-top: 10px;
+      margin-left: 0px; }
+      .wow_artifact_power .cols .btns .eta {
+        margin-top: 0;
+        margin-bottom: 25px; }
+      .wow_artifact_power .cols .btns button {
+        float: none;
+        vertical-align: top;
+        display: inline-block;
+        width: 100%; } }
+
+/* WOW Leveling Page */
+.wow_leveling {
+  padding-bottom: 0px; }
+  .wow_leveling .slide {
+    margin: 0px 0px 60px; }
+  .wow_leveling .checked_list {
+    background-color: #f8fafd;
+    margin-left: -40px;
+    margin-right: -40px;
+    padding-left: 40px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-right: 40px; }
+    .wow_leveling .checked_list .checkbox {
+      display: inline-block;
+      margin-right: 20px;
+      margin-top: 0;
+      margin-bottom: 20px; }
+      .wow_leveling .checked_list .checkbox label {
+        font-size: 15px; }
+        .wow_leveling .checked_list .checkbox label span {
+          display: inline-block;
+          vertical-align: top; }
+    .wow_leveling .checked_list .eta {
+      display: inline-block;
+      font-weight: 700;
+      float: right;
+      margin-right: 20px; }
+
+@media (min-width: 980px) and (max-width: 1139px) {
+  .wow_leveling .checked_list {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-right: 20px; }
+    .wow_leveling .checked_list .eta {
+      clear: both;
+      float: right;
+      margin-right: 25px;
+      margin-top: 5px;
+      text-align: center; }
+    .wow_leveling .checked_list button {
+      clear: both; } }
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .wow_leveling .checked_list {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-right: 20px; }
+    .wow_leveling .checked_list .eta {
+      margin-right: 25px;
+      margin-top: 20px;
+      text-align: center; }
+      .wow_leveling .checked_list .eta br {
+        display: none; }
+    .wow_leveling .checked_list button {
+      margin-top: 10px; }
+    .wow_leveling .checked_list .checkbox {
+      display: inline-block;
+      width: 220px;
+      padding-right: 20px;
+      margin-right: 20px;
+      margin-top: 0;
+      margin-bottom: 20px; }
+      .wow_leveling .checked_list .checkbox label {
+        font-size: 14px; }
+        .wow_leveling .checked_list .checkbox label span {
+          display: inline-block;
+          vertical-align: top; } }
+
+@media (max-width: 767px) {
+  .wow_leveling .checked_list {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-right: 20px; }
+    .wow_leveling .checked_list .eta {
+      margin-right: 25px;
+      margin-top: 20px;
+      text-align: center; }
+      .wow_leveling .checked_list .eta br {
+        display: none; }
+    .wow_leveling .checked_list button {
+      margin-top: 10px;
+      width: 100%; }
+    .wow_leveling .checked_list .checkbox {
+      display: inline-block;
+      width: 220px;
+      padding-right: 20px;
+      margin-right: 20px;
+      margin-top: 0;
+      margin-bottom: 20px; }
+      .wow_leveling .checked_list .checkbox label {
+        font-size: 14px; }
+        .wow_leveling .checked_list .checkbox label span {
+          display: inline-block;
+          vertical-align: top; }
+          .wow_leveling .checked_list .checkbox label span br {
+            display: none; } }
+
+.boost_your_own_mystic {
+  padding-bottom: 40px; }
+  .boost_your_own_mystic .radio_list {
+    background: none;
+    margin-top: -10px; }
+    .boost_your_own_mystic .radio_list .item.clear {
+      background: none;
+      width: 40px; }
+    .boost_your_own_mystic .radio_list .item.last {
+      background-color: #ffc924;
+      font-weight: 700;
+      padding: 0px 25px;
+      border-radius: 3px; }
+  .boost_your_own_mystic .text {
+    margin-top: 20px;
+    margin-bottom: 30px; }
+    .boost_your_own_mystic .text p {
+      line-height: 26px; }
+  .boost_your_own_mystic .slide {
+    margin: 0px 0px 60px; }
+  .boost_your_own_mystic .border .title {
+    margin-bottom: 30px; }
+  .boost_your_own_mystic .btns {
+    text-align: right; }
+    .boost_your_own_mystic .btns .checkbox {
+      display: inline-block;
+      margin: 0px 15px;
+      margin-top: 10px; }
+    .boost_your_own_mystic .btns .eta {
+      display: inline-block;
+      margin: 0px 20px;
+      font-weight: 700;
+      margin-top: 10px; }
+    .boost_your_own_mystic .btns button {
+      display: inline-block;
+      margin: 0;
+      float: none;
+      position: relative;
+      top: 3px; }
+
+@media (min-width: 980px) and (max-width: 1139px) {
+  .title29 {
+    font-size: 29px !important; }
+  .boost_your_own_mystic {
+    padding-bottom: 40px; }
+    .boost_your_own_mystic .radio_list .item label {
+      padding: 0px 20px; } }
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .boost_your_own_mystic .radio_list .item.clear.second {
+    width: 0; }
+  .boost_your_own_mystic .radio_list .item.last {
+    margin-top: 20px; }
+  .boost_your_own_mystic .btns {
+    position: relative; }
+    .boost_your_own_mystic .btns .checkbox {
+      margin: 0px 20px; }
+    .boost_your_own_mystic .btns .eta {
+      margin: 0px 8px;
+      position: absolute;
+      top: 70px;
+      right: 110px; } }
+
+@media (max-width: 767px) {
+  .boost_your_own_mystic .radio_list .item {
+    width: 50%;
+    float: left;
+    margin-bottom: 25px; }
+    .boost_your_own_mystic .radio_list .item label {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      text-align: center;
+      padding: 18px 5px;
+      line-height: 24px; }
+      .boost_your_own_mystic .radio_list .item label[for=item3] {
+        line-height: 48px; }
+    .boost_your_own_mystic .radio_list .item.clear {
+      width: 0; }
+    .boost_your_own_mystic .radio_list .item.last {
+      width: 100%; }
+  .boost_your_own_mystic .btns {
+    position: relative;
+    text-align: center; }
+    .boost_your_own_mystic .btns .checkbox {
+      display: block;
+      margin-bottom: 18px; }
+      .boost_your_own_mystic .btns .checkbox label {
+        font-size: 14px; }
+    .boost_your_own_mystic .btns .eta {
+      margin-bottom: 18px; }
+  .boost_your_own_mystic .border .title {
+    font-size: 25px; } }
 
 /*# sourceMappingURL=main.css.map*/
