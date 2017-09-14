@@ -143,13 +143,23 @@
             <div class="container">
                 <div class="window">
                 	<div class="navigation">
-                		<div class="points"><img src="./images/cabinet_coin.png" alt=""><span>0 PBP</span></div>
+                		<div class="cabinet_menu">
+                			<a href="#"><img src="./images/cabinet_settings_open.png" alt=""></a>
+                			<p>Profile settings</p>
+                		</div>
+
+                		<div class="points">
+							<a href="points.html">
+								<img src="./images/cabinet_coin.png" alt="">
+							</a>
+							<span>0 PBP</span>
+						</div>
 						<ul class="tabs">
-							<li><a href="#">Profile settings</a></li>
-							<li><a href="#">Change password</a></li>
-							<li class="active"><a href="#">My services</a></li>
-							<li><a href="#">My points</a></li>
-							<li><a href="#">Referrals</a></li>
+							<li><a href="/cabinet_profile.html">Profile settings</a></li>
+							<li><a href="/cabinet_password.html">Change password</a></li>
+							<li><a href="/cabinet.html">My services</a></li>
+							<li class="active"><a href="/cabinet_points.html">My points</a></li>
+							<li><a href="/cabinet_referrals.html">Referrals</a></li>
 						</ul>
 						<div class="referral">
 							<p>Your referral code:</p>
@@ -158,37 +168,7 @@
                 	</div>
                 	<div class="tabs_content">
                 		<div class="wellcome">Wellcome, <span>Anton!</span></div>
-                		<div id="services" class="tab_content services active">
-                			<p class="title">My Services</p>
-                			<div class="table">
-                				<table cellspacing="0" cellpadding="10">
-								  <tr class="first_row">
-								    <th>Service/<br/>service id</th>
-								    <th>game</th>
-								    <th>date<br/>bought</th>
-								    <th>date<br/>completed</th>
-								    <th>price</th>
-								    <th>status</th>
-								    <th>contact with<br/>booster</th>
-								  </tr>
-								  <tr>
-								    <th>Service/<br/>service id</th>
-								    <th>game</th>
-								    <th>date<br/>bought</th>
-								    <th>date<br/>completed</th>
-								    <th>price</th>
-								    <th>status</th>
-								    <th>contact with<br/>booster</th>
-								  </tr>
-								  <tr>
-								    <td colspan="7">
-								    	<p class="empty_table">You have no orders at this moment</p>
-								    </td>
-								  </tr>
-								</table>
-                			</div>
-                		</div>
-                		<div id="points" class="tab_content points">
+                		<div id="points" class="tab_content points active">
                 			<p class="title">My Points</p>
                 			<div class="table">
                 				<table cellspacing="0" cellpadding="10">
@@ -212,70 +192,6 @@
 								    </td>
 								  </tr>
 								</table>
-                			</div>
-                		</div>
-                		<div id="referrals" class="tab_content referrals">
-                			<p class="title">My referrals</p>
-                			<div class="referral_change">
-                				<p>My Referral Code:</p>
-                				<form action="#" class="referral_form">
-                					<input type="text">
-                					<button type="submit">Change</button>
-                				</form>
-                				<div class="clearfix"></div>
-                			</div>
-                			<div class="table">
-                				<table cellspacing="0" cellpadding="10">
-								  <tr class="first_row">
-								    <th>date</th>
-								    <th>referred user</th>
-								    <th>product details</th>
-								    <th>add/less</th>
-								    <th>points</th>
-								  </tr>
-								  <tr>
-								    <th>Service/<br/>service id</th>
-								    <th>game</th>
-								    <th>date<br/>bought</th>
-								    <th>date<br/>completed</th>
-								    <th>contact with<br/>booster</th>
-								  </tr>
-								  <tr>
-								    <td colspan="5">
-								    	<p class="empty_table">You have no orders at this moment</p>
-								    </td>
-								  </tr>
-								</table>
-                			</div>
-                		</div>
-                		<div id="password_change" class="tab_content password_change">
-                			<p class="title">Change password</p>
-                			<div class="password_change">
-                				<form action="#" class="password_form">
-                					<input type="password" placeholder="Old password">
-                					<input type="password" placeholder="Password">
-                					<input type="password" placeholder="Verify password">
-                					<button type="submit">Change password</button>
-                				</form>
-                				<div class="clearfix"></div>
-                			</div>
-                		</div>
-                		<div id="profile_settings" class="tab_content profile_settings">
-                			<p class="title">Profile settings</p>
-                			<div class="profile_settings_change">
-                				<form action="#" class="password_form">
-                					<input type="text" placeholder="Name">
-                					<input type="text" placeholder="Agent code">
-                					<input type="text" placeholder="Aim">
-                					<input type="text" placeholder="User name">
-                					<input type="text" placeholder="Msn">
-                					<input type="text" placeholder="Email">
-                					<input type="text" placeholder="Skype">
-                					<input type="text" placeholder="User mobile">
-                					<input type="text" placeholder="Country">
-                					<button type="submit">Change settings</button>
-                				</form>
-                				<div class="clearfix"></div>
                 			</div>
                 		</div>
                 	</div>
