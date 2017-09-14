@@ -187,7 +187,15 @@ $(document).ready(function() {
         
         $('.job_page .cols .col.lcol ul').slideToggle();
     });
-    /* //mobile  menu*/
+    /* //partner mobile  menu*/
+
+    /*cabinet mobile menu*/
+    $('.cabinet_page .window .navigation .cabinet_menu').click(function () { 
+        $('.cabinet_page .window').toggleClass('active');       
+        $('.job_page .cols .col.lcol ul').slideToggle();
+    });
+    /* //cabinet  menu*/
+    
 
 
 
