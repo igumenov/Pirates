@@ -620,7 +620,9 @@ header{
                     opacity: 1;
                 }
                 .block{
-                    overflow: initial;
+                    overflow: hidden;
+                    position: relative;
+                    top: -3px;
                     &:before{
                         background: rgba(31, 73, 128, 0.58);
                         transition: .2s;
@@ -1094,10 +1096,10 @@ footer{
     background: url('../images/popup_bg.png') no-repeat top center;
     padding: 50px 0px;
     color: #ffffff;
-    position: fixed;
     top: 0;
     width: 100%;
     z-index: 4;
+    position: fixed;
     display: none;
     .close{
         position: absolute;
@@ -3067,8 +3069,12 @@ footer{
         .title{
             font-size: 30px;
             font-weight: 700;
+            position: relative;
+            padding-right: 500px;
             .icons{
-                float: right;
+                position: absolute;
+                right: 0;
+                top: 0;
                 .ico{
                     font-size: 13px;
                     font-weight: 400;
@@ -3215,22 +3221,30 @@ footer{
                 border-radius: 3px;
                 border: 1px solid #f1f1f1;
                 position: absolute;
+                transition: .2s;
                 left: 0;
                 top: 0;
             }
+            &:after{
+                content: '';
+                width: 11px;
+                height: 11px;
+                position: absolute;
+                top: 7px;
+                left: 5px;
+                transition: .2s;
+                background: none;
+            }
+
         }
         input{
             display: none;
             &:checked ~ label{
+                &:before{
+                    border: 1px solid #ccc;
+                }
                 &:after{
-                    content: '';
-                    width: 11px;
-                    height: 11px;
                     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAICAYAAAAvOAWIAAAAY0lEQVQoU43PYRFAQBAG0KeJBlQQQQMVNBFBBA1UEEEEEcwZO3OYwf3dt99+V/j3aqzFD5vgjPYLB+wxvuELTA0CT+iwnbUeMMcjKjQoz47H6fxPeY1YSPgB8+QIGLDcE2O4A4SyEVlSKtvSAAAAAElFTkSuQmCC) no-repeat;
-                    position: absolute;
-                    top: 7px;
-                    left: 5px;
-                    transition: .2s;
                 }
             }
         }
@@ -3334,9 +3348,11 @@ footer{
                 padding: 30px;
             }
             .title{
+                padding-right: 0;
                 .icons{
                     float: none;
                     margin-top: 25px;
+                    position: initial;
                     .ico{
                         margin-left: 0px;
                         margin-right: 25px;
@@ -3366,9 +3382,11 @@ footer{
             }
             .title{
                 text-align: center;
+                padding-right: 0;
                 .icons{
                     float: none;
                     margin-top: 25px;
+                    position: initial;
                     .ico{
                         margin-left: 0px;
                         margin-right: 0px;
@@ -5238,10 +5256,436 @@ footer{
 }
 @media (max-width: 330px) {}
 
+/* Wow gladiator page */
+.wow_gladiator{
+    .radio_list{
+        background: none;
+        margin-right: 40px;
+        .item{
+            label{
+                padding: 0px 24px;
+            }
+            &.clear{
+                width: 40px;
+            }
+        }
+    }
+    .title_m{
+        margin: 40px 0px 20px;
+    }
+    .row{
+        margin: 40px 0px;
+        position: relative;
+        span{
+            font-weight: 700;
+            display: inline-block;
+        }
+        input[type=text]{
+            height: 48px;
+            line-height: 48px;
+            border-radius: 5px;
+            background-color: #fff;
+            border: none;
+            outline: none;
+            padding-left: 20px;
+            width: 100%;
+            max-width: 170px;
+            display: inline-block;
+            border: 1px solid #dcdcdc;
+            transition: .2s;
+            margin: 0px 10px;
+            &:focus{
+                border: 1px solid #4dc8f4;
+                background: #fff;
+            }
+            &:hover{
+                background-color: #f3f3f3;
+                border: 1px solid #a4cef3;
+            }
 
+        }
+        .info{
+            width: 18px;
+            display: inline-block;
+            position: relative;
+            height: 18px;
+            background: url('../images/ico_info.png') no-repeat center center;
+            font-weight: 400;
+            .text{
+                position: absolute;
+                background: #fb7063;
+                bottom: 25px;
+                left: -20px;
+                width: 150px;
+                padding: 10px;
+                border-radius: 3px;
+                font-size: 14px;
+                color: #fff;
+                opacity: 0;
+                visibility: hidden;
+                transition: .2s;
+                z-index: 1;
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: 100%;
+                    width: 0; height: 0;
+                    left: 22px;
+                    border-top: 6px solid #fb7063;
+                    border-right: 6px solid transparent;
+                    border-left: 6px solid transparent;
+                  }
+            }
+            &:hover{
+                .text{
+                    visibility: initial;
+                    opacity: 1;
+                }
+            }
+        }
+        .img{
+            position: absolute;
+            bottom: -30px;
+            right: 0px;
+            img{
+                max-width: 100%;
+            }
+            span{
+                position: absolute;
+                left: 80px;
+                top: 200px;
+            }
+        }
+    }
+    .border{
+        margin-bottom: 30px;
+        .title{
+            padding-right: 0;
+        }
+        .slide{
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+    }
+    ul.checked{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        margin-top: -10px;
+        li{
+            color: #000;
+            font-size: 16px;
+            line-height: 22px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 27px;
+            background: url('../images/ico_ul.checked.png') no-repeat 0px 13px;
+        }
+    }
+    .col{
+        display: table;
+        width: 100%;
+        margin-top: 20px;
+        .checked_list{
+            display: table-cell;
+            vertical-align: middle;
+            .checkbox{
+                display: inline-block;
+                margin-right: 20px;
+                max-width: 200px;
+                vertical-align: top;
+                label{
+                    vertical-align: top;
+                    span{
+                        display: inline-block;
+                    }
+                }
+            }
 
+        }
+        .btns{
+            display: table-cell;
+            vertical-align: middle;
+            text-align: right;
+            .eta{
+                font-weight: 700;
+                margin-right: 10px;
+                display: inline-block;
+                max-width: 140px;
+                text-align: left;
+            }
+            button{
+                float: none;
+                display: inline-block;
+            }
+        }
+    }
+}
+@media (min-width: 980px) and (max-width: 1139px) {
+    .wow_gladiator .row .img{
+        width: 500px;
+    }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+    .wow_gladiator .row .img{
+        width: 300px;
+        transform: scale(-1, 1);
+        span{            
+            transform: scale(-1, 1);
+            left: 0;
+            top: 100px;
+        }
+    }
+    .wow_gladiator .col .checked_list{
+        vertical-align: top;
+        .checkbox{
+            display: block;
+            max-width: initial;
+            margin-top: 0;
+            label span{
+                br{
+                    display: none;
+                }
+            }
+        }
+    }
+    .wow_gladiator .col .btns{
+        width: 400px;
+        vertical-align: top;
+    }
+}
+@media (max-width: 767px) {
+    .wow_gladiator{
+        .radio_list{
+            display: table;
+            width: 100%;
+            .item{
+                display: table-cell;
+                vertical-align: top;
+                label{
+                    line-height: 25px;
+                    padding: 10px;
+                    text-align: center;
+                    display: block;
+                }
+            }
+        }
+        .row{
+            .img{
+                position: initial;
+                transform: scale(-1, 1);
+                margin-bottom: 20px;
+                span{
+                    transform: scale(-1, 1);
+                    left: 0;
+                    top: 100px;
+                }
+            }
+            span{
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+            input[type=text]{
+                margin: 0;
+            }
+            .info{
+                position: relative;
+                top: 14px;
+                left: 10px;
+                .text{
+                    left: -120px;
+                    &:after{
+                        left: 123px;
+                    }
+                }
+            }
+        }
+        .col{
+            display: block;
+            margin-top: 20px;
+            .checked_list{
+                display: block;
+                .checkbox{
+                    display: block;
+                    margin-right: 0px;
+                    max-width: initial;
+                }
+    
+            }
+            .btns{
+                display: block;
+                text-align: left;
+                .eta{
+                    margin-right: 0px;
+                    display: block;
+                    max-width: initial;
+                    margin-bottom: 10px;
+                    margin-top: 20px;
+                    text-align: center;
+                }
+                button{
+                    float: none;
+                    display: block;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 330px) {}
 
-
+/* wow 3x3 page*/
+.wow_3x3{
+    padding-bottom: 30px;
+    .row{
+        margin-bottom: 20px;
+        .cols{
+            display: table;
+            width: 100%;
+            .col{
+                display: table-cell;
+                &:nth-child(2){
+                    padding: 0px 40px;
+                    input[type=text]{
+                        width: 250px;
+                    }
+                }
+                &:nth-child(3){
+                    max-width: 230px;
+                }
+                input[type=text]{
+                    width: 391px;
+                    height: 53px;
+                    border: 1px solid #f1f1f1;
+                    outline: none;
+                    display: block;
+                    padding-left: 18px;
+                }
+                p{
+                    white-space: nowrap;
+                    padding-left: 18px;
+                }
+            }
+        }
+    }
+    .border{
+        .cols{
+            display: table;
+            width: 100%;
+            .col{
+                display: table-cell;
+                &:nth-child(1){
+                    width: 100%;
+                    padding-right: 30px;
+                }
+                button{
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+    .wow_3x3{
+        .row{
+            .cols{
+                .col{
+                    display: table-cell;
+                    width: 33.3333%;
+                    &:nth-child(2){
+                        padding: 0px 20px;
+                        input[type=text]{
+                            width: initial;
+                        }
+                    }
+                    input[type=text]{
+                        width: 100%;
+                        height: 53px;
+                        border: 1px solid #f1f1f1;
+                        outline: none;
+                        display: block;
+                        padding-left: 18px;
+                    }
+                }
+            }
+        }
+        .border{
+            .cols{
+                display: block;
+                width: initial;
+                .col{
+                    display: block;
+                    &:nth-child(1){
+                        width: initial;
+                        padding-right: 0px;
+                    }
+                    &:nth-child(2){
+                        text-align: center;
+                        margin-bottom: -20px;
+                        button{
+                            float: none;
+                            margin-top: 60px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .wow_3x3{
+        .row{
+            .cols{
+                display: block;
+                width: initial;
+                .col{
+                    display: block;
+                    width: initial;
+                    &:nth-child(2){
+                        padding: 0px 0px;
+                        input[type=text]{
+                            width: 100%;
+                        }
+                    }
+                    &:nth-child(3){
+                        max-width: 100%;
+                    }
+                    input[type=text]{
+                        width: 100%;
+                        height: 53px;
+                        border: 1px solid #f1f1f1;
+                        outline: none;
+                        display: block;
+                        padding-left: 18px;
+                    }
+                }
+            }
+        }
+        .border{
+            .cols{
+                display: block;
+                width: initial;
+                .col{
+                    display: block;
+                    &:nth-child(1){
+                        width: initial;
+                        padding-right: 0px;
+                    }
+                    &:nth-child(2){
+                        text-align: center;
+                        margin-bottom: -20px;
+                        button{
+                            float: none;
+                            margin-top: 60px;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 330px) {}
 
 
 

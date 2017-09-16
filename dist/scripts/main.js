@@ -389,6 +389,42 @@ $(document).ready(function() {
         },
     });
     /* */
+    /* Wow gladiator slider */
+    $("#wow_gladiator_slider").ionRangeSlider({
+        hide_min_max: true,
+        keyboard: true,
+        min: 1,
+        max: 2500,
+        type: 'single',
+        step: 1,
+        prefix: "From ",
+        grid: true,
+        grid_num: 5,
+        grid_snap: false,
+        onChange: function (data) {
+            var price = parseFloat((data.from*4.9).toFixed(3));
+            $('button[type=submit] span').html('€'+price);
+        },
+    });
+    /* // */
+    /* wow_3x3 slider */
+    $("#wow_3x3_slider").ionRangeSlider({
+        hide_min_max: true,
+        keyboard: true,
+        min: 1,
+        max: 35,
+        type: 'single',
+        step: 1,
+        prefix: "Hours ",
+        grid: true,
+        grid_num: 5,
+        grid_snap: false,
+        onChange: function (data) {
+            var price = parseFloat((data.from*4.9).toFixed(3));
+            $('button[type=submit] span').html('€'+price);
+        },
+    });
+    /* // */
 });
 
 
