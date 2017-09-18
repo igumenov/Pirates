@@ -5892,10 +5892,211 @@ footer{
         }
     }
 }
+
+/* Wow RGB rating */
+.wow_rgb_rating{
+    .radio_list{
+        display: inline-block;
+        margin-right: 30px;
+        margin-bottom: 40px;
+    }
+    .slide{
+        position: relative;
+        .info{
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAABxElEQVQ4T41Uy23bUBCc4UfXqIS4AjMVhKogSAGR6GsgAVQFUQcmIMJnUqkgFZiuwHQFdgnO1fxssI8iTTIELV4IvN03u7M784iJr9gGvlA2EHgkPE0RQQ4ipzB14yQbX2P/QH4GXmnJLQh/qkB3JsicmnveJXl71gEZEFvuASwh+CusD25lZ22yxgu78inWAcQnAK9OxVUbN0B9EBFJXccKGSWvU11JGCyLso5IbvpgBqjYrTOAXxVkEZ+CWVrn4Nt2nRgwQebG6Yo6WFDulY7j8PO4E+1W7/bnYViEwbIs5cXQFK7YIgvq/eL4Oxp3U2zXBz1z45P59z8TI38pEwXKSV47Fb+MqxraM0Dn2T6qNFjsNmIqHtOBFNrKc0DNfJv7HwK97X6EmjhFewDUUbN5xSh5uWRjbc47NXm6cNi8duP0++ywu/WrUpuuBkJsfFd5Y2pm/ZU8N07gaihIIFkc05tL6HWChDy4x5P/bhFLMhWXAIlrcz9rkUpuCQRGxDV9lc3QtGcw9RBEIqe2/vRNW1r1N5C6RWPsFsSs/79nxK4j9d08PXlwKiucfEaG0g98Qa3m9VT1xlsiTwBywkqmHrZ/BOcbrL85l1YAAAAASUVORK5CYII=) no-repeat top 3px left;
+            padding-left: 28px;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 28px;
+            max-width: 380px;
+            position: absolute;
+            top: -80px;
+            right: 100px;
+            &:before{
+                content: '';
+                width: 84px;
+                height: 90px;
+                background: url('../images/wow_rgb_arr.png') no-repeat;
+                position: absolute;
+                right: -100px;
+            }
+        }
+    }
+    .bg{
+        margin-top: 60px;
+        margin-left: -40px;
+        margin-right: -40px;
+        padding-left: 40px;
+        padding-right: 40px;
+        background-color: #f8fafd;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        p{
+            line-height: 24px;
+        }
+    }
+    .row{
+        .list{
+            float: left;
+            .checkbox{
+                display: inline-block;
+                margin-right: 20px;
+            }
+        }
+        .btns{
+            float: right;
+            .eta{
+                display: inline-block;
+                margin-right: 20px;
+                font-weight: 700;
+                margin-top: 17px;
+            }
+            button{
+                margin-top: 5px;
+            }
+        }
+    }
+}
+@media (min-width: 980px) and (max-width: 1139px) {
+    .wow_rgb_rating{
+        .bg{
+            margin-top: 60px;
+            margin-left: -20px;
+            margin-right: -20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color: #f8fafd;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            p{
+                line-height: 24px;
+            }
+        }
+        .row{
+            .list{
+                margin-top: 15px;
+            }
+            .btns{
+                width: 230px;
+                margin-top: -30px;
+                .eta{
+                    margin-bottom: 10px;
+                    display: block;
+                    margin-right: 0;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+    .wow_rgb_rating{
+        .bg{
+            margin-top: 60px;
+            margin-left: -20px;
+            margin-right: -20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color: #f8fafd;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            p{
+                line-height: 24px;
+            }
+        }
+        .slide{
+            margin-top: 60px;
+            .info{
+                max-width: 260px;
+                top: -120px;
+                &:before{
+                    top: 40px;
+                }
+            }
+        }
+        .row{
+            .list{
+                margin-top: 15px;
+                float: none;
+                text-align: center;
+            }
+            .btns{
+                float: none;
+                text-align: center;
+                .eta{
+                    margin-bottom: 10px;
+                    display: block;
+                    margin-right: 0;
+                    text-align: center;
+                }
+                button{
+                    float: none;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .wow_rgb_rating{
+        .radio_list{
+            display: table;
+            width: 100%;
+            .item{
+                display: table-cell;
+                vertical-align: top;
+                label{
+                    line-height: 25px;
+                    padding: 10px;
+                    text-align: center;
+                    display: block;
+                }
+            }
+        }
+        .slide{
+            .info{
+                display: none;
+            }
+        }
+        .bg{
+            margin-top: 60px;
+            margin-left: -20px;
+            margin-right: -20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color: #f8fafd;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            p{
+                line-height: 24px;
+            }
+        }
+        .row{
+            .list{
+                margin-top: 15px;
+                float: none;
+                .checkbox{
+                    display: block;
+                }
+            }
+            .btns{
+                float: none;
+                text-align: center;
+                .eta{
+                    margin-top: 25px;
+                    margin-bottom: 15px;
+                    display: block;
+                    margin-right: 0;
+                    text-align: center;
+                }
+                button{
+                    float: none;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
 @media (max-width: 330px) {}
-
-
-
 
 
 
