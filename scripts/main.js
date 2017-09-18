@@ -445,6 +445,25 @@ $(document).ready(function() {
         },
     });
     /* */
+
+    /* wow rgb wins slider */
+    $("#wow_rgb_wins_slider").ionRangeSlider({
+        hide_min_max: true,
+        keyboard: true,
+        min: 0,
+        max: 15,
+        type: 'single',
+        step: 1,
+        prefix: "Match ",
+        grid: true,
+        grid_num: 4,
+        grid_snap: false,
+        onChange: function (data) {
+            var price = parseFloat((data.from*4.9).toFixed(3));
+            $('button[type=submit] span').html('€'+price);
+        },
+    });
+    /* */
 });
 
 

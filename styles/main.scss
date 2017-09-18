@@ -6096,10 +6096,182 @@ footer{
         }
     }
 }
+
+.wow_rgb_wins{
+    .radio_list{
+        display: inline-block;
+        margin-right: 30px;
+        margin-bottom: 40px;
+    }
+    .cols{
+        display: table;
+        width: 100%;
+        .col{
+            display: table-cell;
+            vertical-align: top;
+            &:nth-child(1){
+                padding-right: 30px;
+            }
+            &:nth-child(2){
+                padding-left: 30px;
+                width: 530px;
+            }
+            .title{
+                padding: 0;
+            }
+            .row{
+                margin: 40px 0px;
+                span{
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-right: 10px;
+                }
+                input[type=text]{
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 95px;
+                    height: 50px;
+                    border: 1px solid #ececec;
+                    outline: none;
+                    border-radius: 3px;
+                    text-align: center;
+                }
+            }
+            .slide{
+                margin-bottom: 50px;
+            }
+            p{
+                line-height: 24px;
+            }
+            .blocks{
+                margin-top: 40px;
+                .block{
+                    display: inline-block;
+                    width: 234px;
+                    vertical-align: top;
+                    background-color: #f8fafd;
+                    padding: 20px 20px 10px;
+                    min-height: 325px;
+                    &:nth-child(1){
+                        margin-right: 10px;
+                    }
+                    &:nth-child(2){
+                        margin-left: 10px;
+                    }
+                    .name{
+                        text-align: center;
+                        font-size: 20px;
+                        font-weight: 700;
+                    }
+                    table{
+                        width: 100%;
+                        margin-top: 15px;
+                        tr{
+                            td{
+                                line-height: 31px;
+                                white-space: nowrap;
+                                &:nth-child(2){
+                                    font-weight: 700;
+                                    padding-left: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            p.bold{
+                text-align: center;
+                font-size: 20px;
+                font-weight: 700;
+            }
+        }
+    }
+    .btns{
+        text-align: center;
+        button{
+            float: none;
+            min-width: 280px;
+        }
+        .checkbox{
+            display: inline-block;
+            margin-right: 40px;
+        }
+        .eta{
+            font-weight: 700;
+        }
+    }
+}
+@media (min-width: 980px) and (max-width: 1139px) {}
+@media (min-width: 768px) and (max-width: 979px) {
+    .wow_rgb_wins{
+        .cols{
+            display: block;
+            width: initial;
+            .col{
+                display: block;
+                width: initial;
+                width: 100%;
+                margin-bottom: 30px;
+                &:nth-child(1){
+                    padding-right: 0px;
+                }
+                &:nth-child(2){
+                    padding-left: 0px;
+                    width: initial;
+                }
+                .blocks{
+                    .block{
+                        width: 340px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .wow_rgb_wins{
+        .radio_list{
+            display: table;
+            width: 100%;
+            .item{
+                display: table-cell;
+                vertical-align: top;
+                label{
+                    line-height: 25px;
+                    padding: 10px;
+                    text-align: center;
+                    display: block;
+                }
+            }
+        }
+        .cols{
+            display: block;
+            width: initial;
+            .col{
+                display: block;
+                width: initial;
+                width: 100%;
+                margin-bottom: 30px;
+                &:nth-child(1){
+                    padding-right: 0px;
+                }
+                &:nth-child(2){
+                    padding-left: 0px;
+                    width: initial;
+                }
+                .blocks{
+                    .block{
+                        width: 100%;
+                        text-align: center;
+                        margin: 0px 0px 20px 0px!important;
+                    }
+                }
+            }
+        }
+    }
+}
 @media (max-width: 330px) {}
-
-
-
 
 
 
