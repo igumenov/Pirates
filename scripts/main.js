@@ -487,6 +487,49 @@ $(document).ready(function() {
             ).trigger('to.owl.carousel', [event.item.index+1, 300]);
         },
     });
+    /* Vicious saddle slider1 */
+    $(".wow_vicious_saddle .slider.owl-carousel").owlCarousel({
+        items: 5,
+        nav:true,
+        loop: true,
+        center:true,
+        dots: false,
+        navText: [,],
+        responsive : {
+            0 : {
+                items: 2,
+                nav:false,
+            },
+            767 : {
+                items: 5,
+            },
+            1023 : {
+                items: 5,
+            },
+            1100 : {
+                items: 5,
+            }
+        },
+    });
+    /* slider */
+    $("#wow_vicious_saddle_slider").ionRangeSlider({
+        hide_min_max: true,
+        keyboard: true,
+        min: 0,
+        max: 100,
+        type: 'single',
+        step: 1,
+        prefix: "",
+        postfix: "  (3v3 wins)",
+        grid: true,
+        grid_num: 5,
+        grid_snap: false,
+        onChange: function (data) {
+            var price = parseFloat((data.from*4.9).toFixed(3));
+            $('button[type=submit] span').html('€'+price);
+        },
+    });
+    /* */
 });
 
 

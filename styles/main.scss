@@ -6522,9 +6522,263 @@ footer{
     }
     
 }
-
-
-
+/* Wow Vicious saddle Page*/
+.wow_vicious_saddle{
+    padding-bottom: 40px;
+    .title2{
+        font-size: 22px;
+        font-weight: 700;
+    }
+    .cols{
+        .col1{
+            float: left;
+            width: 740px;
+            .slider1{
+                margin: 40px 0px;
+            }
+            .owl-prev{
+                width: 24px;
+                height: 24px;
+                border-left: 3px solid #27556c;
+                border-top: 3px solid #27556c;
+                transform: rotate(-45deg);
+                transition: .2s;
+                position: absolute;
+                top: 50px;
+                left: -10px;
+                &:hover{
+                    left: -13px;
+                }
+            }
+            .owl-next{
+                width: 24px;
+                height: 24px;
+                border-left: 3px solid #27556c;
+                border-top: 3px solid #27556c;
+                transform: rotate(135deg);
+                transition: .2s;
+                position: absolute;
+                top: 50px;
+                right: -10px;
+                &:hover{
+                    right: -13px;
+                }
+            }
+            .item{
+                text-align: center;
+                position: relative;
+                z-index: 2;
+                padding-top: 8px;
+                img{
+                    max-width: 100%;
+                    width: initial;
+                    display: inline-block;
+                }
+                span{
+                    display: inline-block;
+                    font-size: 15px;
+                    font-weight: 700;
+                    line-height: 18px;
+                    margin-top: 10px;
+                    display: none;
+                }
+            }
+            .center{
+                &:before{
+                    content: '';
+                    display: block;
+                    width: 116px;
+                    height: 116px;
+                    background-color: #f85757;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    z-index: 0;
+                }
+                .item{
+                    span{                        
+                        display: inline-block;
+                    }
+                }
+            }
+            .slider2{
+                .center{
+                    &:before{
+                        background-color: #6076ff;
+                    }
+                }
+            }
+        }
+        .col2{
+            width: 262px;
+            float: right;
+            padding: 30px;
+            background-color: #f8fafd;
+            margin-top: 60px;
+            .name{
+                font-size: 18px;
+                font-weight: 700;
+                margin-bottom: 20px;
+            }
+            ul.checked{
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                margin-top: -10px;
+                li{
+                    color: #000;
+                    font-size: 16px;
+                    line-height: 22px;
+                    padding-top: 8px;
+                    padding-bottom: 8px;
+                    padding-left: 27px;
+                    background: url('../images/ico_ul.checked.png') no-repeat 0px 13px;
+                }
+            }
+        }
+    }
+    .border{
+        margin-top: 40px;
+    }
+    .blocks{
+        margin-top: 60px;
+        .warning{
+            font-size: 16px;
+            line-height: 24px;
+        }
+        .block{
+            width: 33.3333%;
+            float: left;
+            &:nth-child(2){
+                padding: 0px 20px;
+            }
+            .eta{
+                display: inline-block;
+                font-weight: 700;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+@media (min-width: 980px) and (max-width: 1139px) {
+    .wow_vicious_saddle .cols .col1{
+        width: 650px;
+    }
+    .wow_vicious_saddle .blocks .block:nth-child(3){
+        .eta{
+            display: block;
+            margin-right: 60px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+    .wow_vicious_saddle{
+        .cols{
+            .col1{
+                float: none;
+                width: 100%;
+            }
+            .col2{
+                width: 100%;
+                float: none;
+                padding: 30px;
+                background-color: #f8fafd;
+                margin-top: 60px;
+                ul.checked{
+                    li{
+                        display: block;
+                        width: 25%;
+                        float: left;
+                        padding-right: 20px;
+                    }
+                }
+            }
+        }
+        .blocks{
+            .warning{
+            }
+            .block{
+                width: 50%;
+                float: left;
+                &:nth-child(2){
+                    padding: 0px 20px;
+                }
+                &:nth-child(3){
+                    padding: 0px 20px;
+                    width: 100%;
+                    text-align: right;
+                    margin-top: 30px;
+                }
+                .eta{
+                    display: inline-block;
+                    font-weight: 700;
+                    margin-top: 10px;
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .wow_vicious_saddle{
+        .cols{
+            .col1{
+                float: none;
+                width: initial;
+                margin-left: -20px;
+                margin-right: -20px;
+            }
+            .col2{
+                width: 100%;
+                float: none;
+                padding: 30px;
+                background-color: #f8fafd;
+                margin-top: 60px;
+                ul.checked{
+                    li{
+                        display: inline-block;
+                        padding-right: 20px;
+                    }
+                }
+            }
+        }
+        .blocks{
+            .warning{
+            }
+            .block{
+                width: 100%;
+                float: none;
+                margin-bottom: 30px;
+                &:nth-child(2){
+                    padding: 0px 20px;
+                }
+                &:nth-child(3){
+                    padding: 0px 20px;
+                    width: 100%;
+                    text-align: right;
+                    margin-top: 0px;
+                }
+                .eta{
+                    display: block;
+                    font-weight: 700;
+                    margin-bottom: 10px;
+                    margin-right: 0px;
+                    text-align: center;
+                }
+                button{
+                    width: 100%;
+                    float: none;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 330px) {}
 
 
 
