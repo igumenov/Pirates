@@ -389,6 +389,7 @@ $(document).ready(function() {
         },
     });
     /* */
+
     /* Wow gladiator slider */
     $("#wow_gladiator_slider").ionRangeSlider({
         hide_min_max: true,
@@ -425,6 +426,25 @@ $(document).ready(function() {
         },
     });
     /* // */
+    
+    /* wow arena points slider */
+    $("#wow_point_boost_slider").ionRangeSlider({
+        hide_min_max: true,
+        keyboard: true,
+        min: 0,
+        max: 2400,
+        type: 'double',
+        step: 1,
+        prefix: "Points ",
+        grid: true,
+        grid_num: 4,
+        grid_snap: false,
+        onChange: function (data) {
+            var price = parseFloat((data.from*4.9).toFixed(3));
+            $('button[type=submit] span').html('€'+price);
+        },
+    });
+    /* */
 });
 
 
