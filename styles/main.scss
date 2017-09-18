@@ -6274,6 +6274,254 @@ footer{
 @media (max-width: 330px) {}
 
 
+/*WOW Prestige Rank page*/
+.wow_prestige_rank{
+    padding-bottom: 40px;
+    .cols{
+        display: table;
+        width: 100%;
+        .col{
+            display: table-cell;
+            vertical-align: top;
+            &:nth-child(1){
+                width: 280px;
+                padding-right: 40px;
+                .item{
+                    position: relative;
+                    &:before{
+                        content: '';
+                        width: 253px;
+                        height: 98px;
+                        background: url('../images/ico_hs_to.png') no-repeat;
+                        position: absolute;
+                        top: 33px;
+                        left: 55px;
+                        display: block;
+                    }
+                }
+            }
+            &:nth-child(2){
+                width: 280px;
+            }
+            &:nth-child(3){    
+                text-align: right;             
+                .item{
+                    width: initial;
+                }   
+                .checkbox{
+                    display: inline-block;
+                    margin-right: 20px;
+                }   
+                .warning{
+                    text-align: left;
+                    display: inline-block;
+                }         
+            }
+            .border{
+                float: right;
+                button{
+                    width: 100%;
+                }
+                .line{
+                    text-align: center;
+                    .checkbox{
+                        margin-right: 40px;
+                    }
+                }
+            }
+            .item{
+                text-align: center;
+                width: 140px;
+                margin: 0 auto;
+                margin-bottom: 40px;
+                img{
+                    width: initial;
+                    display: inline;
+                }
+                .slide_from{}
+                .owl-nav{
+                    .owl-prev{
+                        width: 14px;
+                        height: 14px;
+                        display: block;
+                        position: absolute;
+                        left: -35px;
+                        top: 72px;
+                        border-left: 3px solid #27556c;
+                        border-top: 3px solid #27556c;
+                        transform: rotate(-45deg);
+                        &.disabled{
+                            display: none;
+                        }
+                        &:hover{
+                            margin-left: -5px;
+                            transition: .2s;
+                        }
+                    }
+                    .owl-next{
+                        width: 14px;
+                        height: 14px;
+                        display: block;
+                        position: absolute;
+                        right: -35px;
+                        top: 72px;
+                        border-left: 3px solid #27556c;
+                        border-top: 3px solid #27556c;
+                        transform: rotate(135deg);
+                        &.disabled{
+                            display: none;
+                        }
+                        &:hover{
+                            margin-right: -5px;
+                            transition: .2s;
+                        }
+                    }
+                }
+                .bg{
+                    float: right;
+                    background-color: #f6ebca;
+                    max-width: 435px;
+                    text-align: left;
+                    border-radius: 5px;
+                    padding-right: 255px;
+                    padding-left: 35px;
+                    padding-top: 34px;
+                    padding-bottom: 34px;
+                    font-weight: 700;
+                    line-height: 22px;
+                    margin-top: 30px;
+                    position: relative;
+                    margin-bottom: 125px;
+                    &:before{
+                        content: '';
+                        width: 200px;
+                        height: 205px;
+                        background: url('../images/ico_hs_cards.png') no-repeat top center;
+                        position: absolute;
+                        right: 26px;
+                        top: -42px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 980px) and (max-width: 1139px) {
+    .wow_prestige_rank .cols .col .item .bg{
+        width: 375px;
+    }
+    .wow_prestige_rank .cols .col .item .bg{
+        margin-bottom: 85px;
+    }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+    .wow_prestige_rank .cols{
+        display: block;
+        .col{
+            display: block;
+            width: 50%!important;
+            float: left;
+            margin-bottom: 60px;
+            &:nth-child(3){
+                float: none;
+                width: 100%!important;
+                margin-top: 100px;
+                clear: both;
+                text-align: center;
+                margin-bottom: 20px;
+                .item{
+                    margin-bottom: 70px;
+                }
+                .clearfix:nth-child(2){                    
+                    border-bottom: 1px solid #e8e8e8;
+                    margin: 40px 0px;
+                }
+                button{
+                    float: none;
+                }
+            }
+            .border{
+                float: none;
+                .clearfix{
+                    border: none!important;
+                    margin: 0!important;
+                }
+                button{
+                    width: initial;
+                    padding: 0px 60px;
+                }
+
+            }
+        }
+    }
+    .wow_prestige_rank .cols .col .item .bg{
+        float: none;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 767px) {
+    .wow_prestige_rank .cols{
+        display: block;
+        .col{
+            display: block;
+            width: 100%!important;
+            margin-bottom: 60px;
+            &:nth-child(1){
+                padding: 0;
+                .item:before{
+                    transform: rotate(90deg);
+                    top: 133px;
+                    left: -56px;
+                }
+                .drop{
+                    position: relative;
+                    top: 200px;
+                }
+            }
+            &:nth-child(2){
+                margin-top: -180px;
+                .drop{
+                    margin-top: 150px;
+                }
+            }
+            &:nth-child(3){
+                float: none;
+                width: 100%!important;
+                margin-top: 10px;
+                clear: both;
+                text-align: center;
+                margin-bottom: 20px;
+                .item{
+                    margin-bottom: 70px;
+                }
+                .clearfix:nth-child(2){                    
+                    border-bottom: 1px solid #e8e8e8;
+                    margin: 40px 0px;
+                }
+                button{
+                    float: none;
+                }
+            }
+        }
+    }
+    .wow_prestige_rank .cols .col .item .bg{
+        float: none;
+        margin: 0 auto;
+        padding-right: 145px;
+        padding-left: 20px;
+        margin-left: -20px;
+        margin-right: -20px;
+        border-radius: 0px;
+        &:before{
+            width: 151px;
+            height: 158px;
+            background-size: cover;
+            right: 10px;
+            top: -28px;
+        }
+    }
+    
+}
 
 
 
