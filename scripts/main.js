@@ -530,6 +530,26 @@ $(document).ready(function() {
         },
     });
     /* */
+
+    /* overwatch_level_boosting_slider */
+    $("#overwatch_level_boosting_slider").ionRangeSlider({
+        hide_min_max: true,
+        keyboard: true,
+        min: 0,
+        max: 25,
+        type: 'double',
+        step: 1,
+        prefix: "level ",
+        grid: true,
+        grid_num: 8,
+        grid_snap: false,
+        onChange: function (data) {
+            var price = parseFloat((data.from*4.9).toFixed(3));
+            $('button[type=submit] span').html('€'+price);
+        },
+    });
+    /* */
+    
 });
 
 
