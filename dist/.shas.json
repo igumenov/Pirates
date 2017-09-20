@@ -4,10 +4,10 @@
     "inputSha": [
       {
         "file": "styles\\main.scss",
-        "sha": "e5c003615523616ef5f8de60f52ecda3293d5357"
+        "sha": "e73b276160492df5ce77cdc0c3c7ac76e8714b12"
       }
     ],
-    "outputSha": "ef9262aab2f74ad2d218dd74bebfce2d45b8e671",
+    "outputSha": "08cb8416587f4ab07267f1a644df2a5236642d2f",
     "input": "styles\\main.scss",
     "output": [
       "styles\\main.css.map",

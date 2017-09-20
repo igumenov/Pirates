@@ -5687,19 +5687,1098 @@ footer{
 }
 @media (max-width: 330px) {}
 
+/* Wow point boost page*/
+.wow_point_boost{
+    padding-bottom: 30px;
+    .radio_list{
+        background: none;
+        margin-bottom: 40px;
+        a.item{
+            display: inline-block;
+            background-color: #ffc924;
+            border-radius: 3px;
+            line-height: 50px;
+            padding: 0px 35px;
+            font-size: 16px;
+            font-weight: 700;
+            color: #000;
+            text-decoration: none;
+            transition: .2s;
+            margin-right: 40px;
+            &:hover{
+                background-color: #ffe400;
+            }
+        }
+    }
+    .img{
+        position: relative;
+        margin-bottom: 30px;
+        img{
+            max-width: 365px;
+            transform: scale(-1, 1);
+        }
+        span{
+            position: absolute;
+            left: 280px;
+            top: 120px;
+            font-weight: 700;
+        }
+    }
+    ul.checked{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        margin-top: -10px;
+        li{
+            color: #000;
+            font-size: 16px;
+            line-height: 22px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 27px;
+            background: url('../images/ico_ul.checked.png') no-repeat 0px 13px;
+        }
+    }
+    .cols{
+        display: table;
+        width: 100%;
+        .col{
+            display: table-cell;
+            width: 50%;
+            vertical-align: top;
+            &:nth-child(1){
+                padding-right: 20px;
+            }
+            &:nth-child(2){
+                padding-left: 20px;
+            }
+        }
+    }
+    .list{
+        .checkbox{
+            display: inline-block;
+            width: 45%;
+            vertical-align: top;
+            label{
+                span{
+                    display: inline-block;
+                    vertical-align: top;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .btns{
+        margin-top: 30px;
+        text-align: right;
+        span.eta{
+            display: inline-block;
+            margin-right: 20px;
+            font-weight: 700;
+            vertical-align: top;
+            margin-top: 10px;
+        }
+        button{
+            float: none;
+            display: inline-block;
+            vertical-align: top;
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+    .wow_point_boost{
+        .cols{
+            display: block;
+            width: initial;
+            .col{
+                display: block;
+                width: initial;
+                &:nth-child(1){
+                    padding-right: 0px;
+                }
+                &:nth-child(2){
+                    padding-left: 0px;
+                    margin-top: 40px;
+                }
+            }
+        }
+        .btns{
+            margin-top: 30px;
+            text-align: center;
+        }
+        ul.checked{
+            float: left;
+            width: 60%;
+            padding-right: 30px;
+        }
+        .list{
+            float: left;
+            width: 40%;
+            padding-left: 30px;
+            .checkbox{
+                display: block;
+                width: initial;
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .wow_point_boost{
+        .radio_list{
+            background: none;
+            margin-bottom: 40px;
+            a.item{
+                display: inline-block;
+                background-color: #ffc924;
+                border-radius: 3px;
+                line-height: 50px;
+                padding: 0px 15px;
+                font-size: 16px;
+                font-weight: 700;
+                color: #000;
+                text-decoration: none;
+                transition: .2s;
+                margin-right: 20px;
+                &:hover{
+                    background-color: #ffe400;
+                }
+            }
+            .item{
+                label{
+                    padding: 0px 20px;
+                }
+            }
+        }
+        .img{
+            img{
+                max-width: 265px;
+            }
+            span{
+                left: 220px;
+                top: 100px;
+            }
+        }
+        .cols{
+            display: block;
+            width: initial;
+            .col{
+                display: block;
+                width: initial;
+                &:nth-child(1){
+                    padding-right: 0px;
+                }
+                &:nth-child(2){
+                    padding-left: 0px;
+                    margin-top: 60px;
+                }
+            }
+        }
+        .list{
+            .checkbox{
+                display: block;
+                width: initial;
+            }
+        }
+        .btns{
+            margin-top: 0px;
+            text-align: center;
+            span.eta{
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+            button{
+                width: 100%;
+            }
+        }
+    }
+}
+
+/* Wow RGB rating */
+.wow_rgb_rating{
+    .radio_list{
+        display: inline-block;
+        margin-right: 30px;
+        margin-bottom: 40px;
+    }
+    .slide{
+        position: relative;
+        .info{
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAABxElEQVQ4T41Uy23bUBCc4UfXqIS4AjMVhKogSAGR6GsgAVQFUQcmIMJnUqkgFZiuwHQFdgnO1fxssI8iTTIELV4IvN03u7M784iJr9gGvlA2EHgkPE0RQQ4ipzB14yQbX2P/QH4GXmnJLQh/qkB3JsicmnveJXl71gEZEFvuASwh+CusD25lZ22yxgu78inWAcQnAK9OxVUbN0B9EBFJXccKGSWvU11JGCyLso5IbvpgBqjYrTOAXxVkEZ+CWVrn4Nt2nRgwQebG6Yo6WFDulY7j8PO4E+1W7/bnYViEwbIs5cXQFK7YIgvq/eL4Oxp3U2zXBz1z45P59z8TI38pEwXKSV47Fb+MqxraM0Dn2T6qNFjsNmIqHtOBFNrKc0DNfJv7HwK97X6EmjhFewDUUbN5xSh5uWRjbc47NXm6cNi8duP0++ywu/WrUpuuBkJsfFd5Y2pm/ZU8N07gaihIIFkc05tL6HWChDy4x5P/bhFLMhWXAIlrcz9rkUpuCQRGxDV9lc3QtGcw9RBEIqe2/vRNW1r1N5C6RWPsFsSs/79nxK4j9d08PXlwKiucfEaG0g98Qa3m9VT1xlsiTwBywkqmHrZ/BOcbrL85l1YAAAAASUVORK5CYII=) no-repeat top 3px left;
+            padding-left: 28px;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 28px;
+            max-width: 380px;
+            position: absolute;
+            top: -80px;
+            right: 100px;
+            &:before{
+                content: '';
+                width: 84px;
+                height: 90px;
+                background: url('../images/wow_rgb_arr.png') no-repeat;
+                position: absolute;
+                right: -100px;
+            }
+        }
+    }
+    .bg{
+        margin-top: 60px;
+        margin-left: -40px;
+        margin-right: -40px;
+        padding-left: 40px;
+        padding-right: 40px;
+        background-color: #f8fafd;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        p{
+            line-height: 24px;
+        }
+    }
+    .row{
+        .list{
+            float: left;
+            .checkbox{
+                display: inline-block;
+                margin-right: 20px;
+            }
+        }
+        .btns{
+            float: right;
+            .eta{
+                display: inline-block;
+                margin-right: 20px;
+                font-weight: 700;
+                margin-top: 17px;
+            }
+            button{
+                margin-top: 5px;
+            }
+        }
+    }
+}
+@media (min-width: 980px) and (max-width: 1139px) {
+    .wow_rgb_rating{
+        .bg{
+            margin-top: 60px;
+            margin-left: -20px;
+            margin-right: -20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color: #f8fafd;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            p{
+                line-height: 24px;
+            }
+        }
+        .row{
+            .list{
+                margin-top: 15px;
+            }
+            .btns{
+                width: 230px;
+                margin-top: -30px;
+                .eta{
+                    margin-bottom: 10px;
+                    display: block;
+                    margin-right: 0;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+    .wow_rgb_rating{
+        .bg{
+            margin-top: 60px;
+            margin-left: -20px;
+            margin-right: -20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color: #f8fafd;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            p{
+                line-height: 24px;
+            }
+        }
+        .slide{
+            margin-top: 60px;
+            .info{
+                max-width: 260px;
+                top: -120px;
+                &:before{
+                    top: 40px;
+                }
+            }
+        }
+        .row{
+            .list{
+                margin-top: 15px;
+                float: none;
+                text-align: center;
+            }
+            .btns{
+                float: none;
+                text-align: center;
+                .eta{
+                    margin-bottom: 10px;
+                    display: block;
+                    margin-right: 0;
+                    text-align: center;
+                }
+                button{
+                    float: none;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .wow_rgb_rating{
+        .radio_list{
+            display: table;
+            width: 100%;
+            .item{
+                display: table-cell;
+                vertical-align: top;
+                label{
+                    line-height: 25px;
+                    padding: 10px;
+                    text-align: center;
+                    display: block;
+                }
+            }
+        }
+        .slide{
+            .info{
+                display: none;
+            }
+        }
+        .bg{
+            margin-top: 60px;
+            margin-left: -20px;
+            margin-right: -20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color: #f8fafd;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            p{
+                line-height: 24px;
+            }
+        }
+        .row{
+            .list{
+                margin-top: 15px;
+                float: none;
+                .checkbox{
+                    display: block;
+                }
+            }
+            .btns{
+                float: none;
+                text-align: center;
+                .eta{
+                    margin-top: 25px;
+                    margin-bottom: 15px;
+                    display: block;
+                    margin-right: 0;
+                    text-align: center;
+                }
+                button{
+                    float: none;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.wow_rgb_wins{
+    .radio_list{
+        display: inline-block;
+        margin-right: 30px;
+        margin-bottom: 40px;
+    }
+    .cols{
+        display: table;
+        width: 100%;
+        .col{
+            display: table-cell;
+            vertical-align: top;
+            &:nth-child(1){
+                padding-right: 30px;
+            }
+            &:nth-child(2){
+                padding-left: 30px;
+                width: 530px;
+            }
+            .title{
+                padding: 0;
+            }
+            .row{
+                margin: 40px 0px;
+                span{
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-right: 10px;
+                }
+                input[type=text]{
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 95px;
+                    height: 50px;
+                    border: 1px solid #ececec;
+                    outline: none;
+                    border-radius: 3px;
+                    text-align: center;
+                }
+            }
+            .slide{
+                margin-bottom: 50px;
+            }
+            p{
+                line-height: 24px;
+            }
+            .blocks{
+                margin-top: 40px;
+                .block{
+                    display: inline-block;
+                    width: 234px;
+                    vertical-align: top;
+                    background-color: #f8fafd;
+                    padding: 20px 20px 10px;
+                    min-height: 325px;
+                    &:nth-child(1){
+                        margin-right: 10px;
+                    }
+                    &:nth-child(2){
+                        margin-left: 10px;
+                    }
+                    .name{
+                        text-align: center;
+                        font-size: 20px;
+                        font-weight: 700;
+                    }
+                    table{
+                        width: 100%;
+                        margin-top: 15px;
+                        tr{
+                            td{
+                                line-height: 31px;
+                                white-space: nowrap;
+                                &:nth-child(2){
+                                    font-weight: 700;
+                                    padding-left: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            p.bold{
+                text-align: center;
+                font-size: 20px;
+                font-weight: 700;
+            }
+        }
+    }
+    .btns{
+        text-align: center;
+        button{
+            float: none;
+            min-width: 280px;
+        }
+        .checkbox{
+            display: inline-block;
+            margin-right: 40px;
+        }
+        .eta{
+            font-weight: 700;
+        }
+    }
+}
+@media (min-width: 980px) and (max-width: 1139px) {}
+@media (min-width: 768px) and (max-width: 979px) {
+    .wow_rgb_wins{
+        .cols{
+            display: block;
+            width: initial;
+            .col{
+                display: block;
+                width: initial;
+                width: 100%;
+                margin-bottom: 30px;
+                &:nth-child(1){
+                    padding-right: 0px;
+                }
+                &:nth-child(2){
+                    padding-left: 0px;
+                    width: initial;
+                }
+                .blocks{
+                    .block{
+                        width: 340px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .wow_rgb_wins{
+        .radio_list{
+            display: table;
+            width: 100%;
+            .item{
+                display: table-cell;
+                vertical-align: top;
+                label{
+                    line-height: 25px;
+                    padding: 10px;
+                    text-align: center;
+                    display: block;
+                }
+            }
+        }
+        .cols{
+            display: block;
+            width: initial;
+            .col{
+                display: block;
+                width: initial;
+                width: 100%;
+                margin-bottom: 30px;
+                &:nth-child(1){
+                    padding-right: 0px;
+                }
+                &:nth-child(2){
+                    padding-left: 0px;
+                    width: initial;
+                }
+                .blocks{
+                    .block{
+                        width: 100%;
+                        text-align: center;
+                        margin: 0px 0px 20px 0px!important;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 330px) {}
 
 
+/*WOW Prestige Rank page*/
+.wow_prestige_rank{
+    padding-bottom: 40px;
+    .cols{
+        display: table;
+        width: 100%;
+        .col{
+            display: table-cell;
+            vertical-align: top;
+            &:nth-child(1){
+                width: 280px;
+                padding-right: 40px;
+                .item{
+                    position: relative;
+                    &:before{
+                        content: '';
+                        width: 253px;
+                        height: 98px;
+                        background: url('../images/ico_hs_to.png') no-repeat;
+                        position: absolute;
+                        top: 33px;
+                        left: 55px;
+                        display: block;
+                    }
+                }
+            }
+            &:nth-child(2){
+                width: 280px;
+            }
+            &:nth-child(3){    
+                text-align: right;             
+                .item{
+                    width: initial;
+                }   
+                .checkbox{
+                    display: inline-block;
+                    margin-right: 20px;
+                }   
+                .warning{
+                    text-align: left;
+                    display: inline-block;
+                }         
+            }
+            .border{
+                float: right;
+                button{
+                    width: 100%;
+                }
+                .line{
+                    text-align: center;
+                    .checkbox{
+                        margin-right: 40px;
+                    }
+                }
+            }
+            .item{
+                text-align: center;
+                width: 140px;
+                margin: 0 auto;
+                margin-bottom: 40px;
+                img{
+                    width: initial;
+                    display: inline;
+                }
+                .slide_from{}
+                .owl-nav{
+                    .owl-prev{
+                        width: 14px;
+                        height: 14px;
+                        display: block;
+                        position: absolute;
+                        left: -35px;
+                        top: 72px;
+                        border-left: 3px solid #27556c;
+                        border-top: 3px solid #27556c;
+                        transform: rotate(-45deg);
+                        &.disabled{
+                            display: none;
+                        }
+                        &:hover{
+                            margin-left: -5px;
+                            transition: .2s;
+                        }
+                    }
+                    .owl-next{
+                        width: 14px;
+                        height: 14px;
+                        display: block;
+                        position: absolute;
+                        right: -35px;
+                        top: 72px;
+                        border-left: 3px solid #27556c;
+                        border-top: 3px solid #27556c;
+                        transform: rotate(135deg);
+                        &.disabled{
+                            display: none;
+                        }
+                        &:hover{
+                            margin-right: -5px;
+                            transition: .2s;
+                        }
+                    }
+                }
+                .bg{
+                    float: right;
+                    background-color: #f6ebca;
+                    max-width: 435px;
+                    text-align: left;
+                    border-radius: 5px;
+                    padding-right: 255px;
+                    padding-left: 35px;
+                    padding-top: 34px;
+                    padding-bottom: 34px;
+                    font-weight: 700;
+                    line-height: 22px;
+                    margin-top: 30px;
+                    position: relative;
+                    margin-bottom: 125px;
+                    &:before{
+                        content: '';
+                        width: 200px;
+                        height: 205px;
+                        background: url('../images/ico_hs_cards.png') no-repeat top center;
+                        position: absolute;
+                        right: 26px;
+                        top: -42px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 980px) and (max-width: 1139px) {
+    .wow_prestige_rank .cols .col .item .bg{
+        width: 375px;
+    }
+    .wow_prestige_rank .cols .col .item .bg{
+        margin-bottom: 85px;
+    }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+    .wow_prestige_rank .cols{
+        display: block;
+        .col{
+            display: block;
+            width: 50%!important;
+            float: left;
+            margin-bottom: 60px;
+            &:nth-child(3){
+                float: none;
+                width: 100%!important;
+                margin-top: 100px;
+                clear: both;
+                text-align: center;
+                margin-bottom: 20px;
+                .item{
+                    margin-bottom: 70px;
+                }
+                .clearfix:nth-child(2){                    
+                    border-bottom: 1px solid #e8e8e8;
+                    margin: 40px 0px;
+                }
+                button{
+                    float: none;
+                }
+            }
+            .border{
+                float: none;
+                .clearfix{
+                    border: none!important;
+                    margin: 0!important;
+                }
+                button{
+                    width: initial;
+                    padding: 0px 60px;
+                }
 
-
-
-
-
-
-
-
-
-
-
+            }
+        }
+    }
+    .wow_prestige_rank .cols .col .item .bg{
+        float: none;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 767px) {
+    .wow_prestige_rank .cols{
+        display: block;
+        .col{
+            display: block;
+            width: 100%!important;
+            margin-bottom: 60px;
+            &:nth-child(1){
+                padding: 0;
+                .item:before{
+                    transform: rotate(90deg);
+                    top: 133px;
+                    left: -56px;
+                }
+                .drop{
+                    position: relative;
+                    top: 200px;
+                }
+            }
+            &:nth-child(2){
+                margin-top: -180px;
+                .drop{
+                    margin-top: 150px;
+                }
+            }
+            &:nth-child(3){
+                float: none;
+                width: 100%!important;
+                margin-top: 10px;
+                clear: both;
+                text-align: center;
+                margin-bottom: 20px;
+                .item{
+                    margin-bottom: 70px;
+                }
+                .clearfix:nth-child(2){                    
+                    border-bottom: 1px solid #e8e8e8;
+                    margin: 40px 0px;
+                }
+                button{
+                    float: none;
+                }
+            }
+        }
+    }
+    .wow_prestige_rank .cols .col .item .bg{
+        float: none;
+        margin: 0 auto;
+        padding-right: 145px;
+        padding-left: 20px;
+        margin-left: -20px;
+        margin-right: -20px;
+        border-radius: 0px;
+        &:before{
+            width: 151px;
+            height: 158px;
+            background-size: cover;
+            right: 10px;
+            top: -28px;
+        }
+    }
+    
+}
+/* Wow Vicious saddle Page*/
+.wow_vicious_saddle{
+    padding-bottom: 40px;
+    .title2{
+        font-size: 22px;
+        font-weight: 700;
+    }
+    .cols{
+        .col1{
+            float: left;
+            width: 740px;
+            .slider1{
+                margin: 40px 0px;
+            }
+            .owl-prev{
+                width: 24px;
+                height: 24px;
+                border-left: 3px solid #27556c;
+                border-top: 3px solid #27556c;
+                transform: rotate(-45deg);
+                transition: .2s;
+                position: absolute;
+                top: 50px;
+                left: -10px;
+                &:hover{
+                    left: -13px;
+                }
+            }
+            .owl-next{
+                width: 24px;
+                height: 24px;
+                border-left: 3px solid #27556c;
+                border-top: 3px solid #27556c;
+                transform: rotate(135deg);
+                transition: .2s;
+                position: absolute;
+                top: 50px;
+                right: -10px;
+                &:hover{
+                    right: -13px;
+                }
+            }
+            .item{
+                text-align: center;
+                position: relative;
+                z-index: 2;
+                padding-top: 8px;
+                img{
+                    max-width: 100%;
+                    width: initial;
+                    display: inline-block;
+                }
+                span{
+                    display: inline-block;
+                    font-size: 15px;
+                    font-weight: 700;
+                    line-height: 18px;
+                    margin-top: 10px;
+                    display: none;
+                }
+            }
+            .center{
+                &:before{
+                    content: '';
+                    display: block;
+                    width: 116px;
+                    height: 116px;
+                    background-color: #f85757;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    z-index: 0;
+                }
+                .item{
+                    span{                        
+                        display: inline-block;
+                    }
+                }
+            }
+            .slider2{
+                .center{
+                    &:before{
+                        background-color: #6076ff;
+                    }
+                }
+            }
+        }
+        .col2{
+            width: 262px;
+            float: right;
+            padding: 30px;
+            background-color: #f8fafd;
+            margin-top: 60px;
+            .name{
+                font-size: 18px;
+                font-weight: 700;
+                margin-bottom: 20px;
+            }
+            ul.checked{
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                margin-top: -10px;
+                li{
+                    color: #000;
+                    font-size: 16px;
+                    line-height: 22px;
+                    padding-top: 8px;
+                    padding-bottom: 8px;
+                    padding-left: 27px;
+                    background: url('../images/ico_ul.checked.png') no-repeat 0px 13px;
+                }
+            }
+        }
+    }
+    .border{
+        margin-top: 40px;
+    }
+    .blocks{
+        margin-top: 60px;
+        .warning{
+            font-size: 16px;
+            line-height: 24px;
+        }
+        .block{
+            width: 33.3333%;
+            float: left;
+            &:nth-child(2){
+                padding: 0px 20px;
+            }
+            .eta{
+                display: inline-block;
+                font-weight: 700;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+@media (min-width: 980px) and (max-width: 1139px) {
+    .wow_vicious_saddle .cols .col1{
+        width: 650px;
+    }
+    .wow_vicious_saddle .blocks .block:nth-child(3){
+        .eta{
+            display: block;
+            margin-right: 60px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+    .wow_vicious_saddle{
+        .cols{
+            .col1{
+                float: none;
+                width: 100%;
+            }
+            .col2{
+                width: 100%;
+                float: none;
+                padding: 30px;
+                background-color: #f8fafd;
+                margin-top: 60px;
+                ul.checked{
+                    li{
+                        display: block;
+                        width: 25%;
+                        float: left;
+                        padding-right: 20px;
+                    }
+                }
+            }
+        }
+        .blocks{
+            .warning{
+            }
+            .block{
+                width: 50%;
+                float: left;
+                &:nth-child(2){
+                    padding: 0px 20px;
+                }
+                &:nth-child(3){
+                    padding: 0px 20px;
+                    width: 100%;
+                    text-align: right;
+                    margin-top: 30px;
+                }
+                .eta{
+                    display: inline-block;
+                    font-weight: 700;
+                    margin-top: 10px;
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .wow_vicious_saddle{
+        .cols{
+            .col1{
+                float: none;
+                width: initial;
+                margin-left: -20px;
+                margin-right: -20px;
+            }
+            .col2{
+                width: 100%;
+                float: none;
+                padding: 30px;
+                background-color: #f8fafd;
+                margin-top: 60px;
+                ul.checked{
+                    li{
+                        display: inline-block;
+                        padding-right: 20px;
+                    }
+                }
+            }
+        }
+        .blocks{
+            .warning{
+            }
+            .block{
+                width: 100%;
+                float: none;
+                margin-bottom: 30px;
+                &:nth-child(2){
+                    padding: 0px 20px;
+                }
+                &:nth-child(3){
+                    padding: 0px 20px;
+                    width: 100%;
+                    text-align: right;
+                    margin-top: 0px;
+                }
+                .eta{
+                    display: block;
+                    font-weight: 700;
+                    margin-bottom: 10px;
+                    margin-right: 0px;
+                    text-align: center;
+                }
+                button{
+                    width: 100%;
+                    float: none;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 330px) {}
 
 
 

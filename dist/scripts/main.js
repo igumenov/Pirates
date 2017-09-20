@@ -389,6 +389,7 @@ $(document).ready(function() {
         },
     });
     /* */
+
     /* Wow gladiator slider */
     $("#wow_gladiator_slider").ionRangeSlider({
         hide_min_max: true,
@@ -425,6 +426,110 @@ $(document).ready(function() {
         },
     });
     /* // */
+    
+    /* wow arena points slider */
+    $("#wow_point_boost_slider").ionRangeSlider({
+        hide_min_max: true,
+        keyboard: true,
+        min: 0,
+        max: 2400,
+        type: 'double',
+        step: 1,
+        prefix: "Points ",
+        grid: true,
+        grid_num: 4,
+        grid_snap: false,
+        onChange: function (data) {
+            var price = parseFloat((data.from*4.9).toFixed(3));
+            $('button[type=submit] span').html('€'+price);
+        },
+    });
+    /* */
+
+    /* wow rgb wins slider */
+    $("#wow_rgb_wins_slider").ionRangeSlider({
+        hide_min_max: true,
+        keyboard: true,
+        min: 0,
+        max: 15,
+        type: 'single',
+        step: 1,
+        prefix: "Match ",
+        grid: true,
+        grid_num: 4,
+        grid_snap: false,
+        onChange: function (data) {
+            var price = parseFloat((data.from*4.9).toFixed(3));
+            $('button[type=submit] span').html('€'+price);
+        },
+    });
+    /* */
+
+    /* wow_prestige_rank*/
+    $(".wow_prestige_rank .slide_from.owl-carousel").owlCarousel({
+        items: 1,
+        nav:true,
+        loop: false,
+        dots: false,
+        navText: [,],
+        onChange: function(event){
+            $(".wow_prestige_rank .slide_to.owl-carousel").owlCarousel({
+                items: 1,
+                nav:true,
+                loop: false,
+                dots: false,
+                navText: [,],
+                onInitialized: function(e){
+                    $(this).trigger('to.owl.carousel', [event.item.index+2, 300]);
+                    console.log(event.item.index);
+                }
+            }
+            ).trigger('to.owl.carousel', [event.item.index+1, 300]);
+        },
+    });
+    /* Vicious saddle slider1 */
+    $(".wow_vicious_saddle .slider.owl-carousel").owlCarousel({
+        items: 5,
+        nav:true,
+        loop: true,
+        center:true,
+        dots: false,
+        navText: [,],
+        responsive : {
+            0 : {
+                items: 2,
+                nav:false,
+            },
+            767 : {
+                items: 5,
+            },
+            1023 : {
+                items: 5,
+            },
+            1100 : {
+                items: 5,
+            }
+        },
+    });
+    /* slider */
+    $("#wow_vicious_saddle_slider").ionRangeSlider({
+        hide_min_max: true,
+        keyboard: true,
+        min: 0,
+        max: 100,
+        type: 'single',
+        step: 1,
+        prefix: "",
+        postfix: "  (3v3 wins)",
+        grid: true,
+        grid_num: 5,
+        grid_snap: false,
+        onChange: function (data) {
+            var price = parseFloat((data.from*4.9).toFixed(3));
+            $('button[type=submit] span').html('€'+price);
+        },
+    });
+    /* */
 });
 
 

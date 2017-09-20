@@ -4252,4 +4252,815 @@ footer {
           margin-top: 60px;
           width: 100%; } }
 
+/* Wow point boost page*/
+.wow_point_boost {
+  padding-bottom: 30px; }
+  .wow_point_boost .radio_list {
+    background: none;
+    margin-bottom: 40px; }
+    .wow_point_boost .radio_list a.item {
+      display: inline-block;
+      background-color: #ffc924;
+      border-radius: 3px;
+      line-height: 50px;
+      padding: 0px 35px;
+      font-size: 16px;
+      font-weight: 700;
+      color: #000;
+      text-decoration: none;
+      transition: .2s;
+      margin-right: 40px; }
+      .wow_point_boost .radio_list a.item:hover {
+        background-color: #ffe400; }
+  .wow_point_boost .img {
+    position: relative;
+    margin-bottom: 30px; }
+    .wow_point_boost .img img {
+      max-width: 365px;
+      transform: scale(-1, 1); }
+    .wow_point_boost .img span {
+      position: absolute;
+      left: 280px;
+      top: 120px;
+      font-weight: 700; }
+  .wow_point_boost ul.checked {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-top: -10px; }
+    .wow_point_boost ul.checked li {
+      color: #000;
+      font-size: 16px;
+      line-height: 22px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-left: 27px;
+      background: url("../images/ico_ul.checked.png") no-repeat 0px 13px; }
+  .wow_point_boost .cols {
+    display: table;
+    width: 100%; }
+    .wow_point_boost .cols .col {
+      display: table-cell;
+      width: 50%;
+      vertical-align: top; }
+      .wow_point_boost .cols .col:nth-child(1) {
+        padding-right: 20px; }
+      .wow_point_boost .cols .col:nth-child(2) {
+        padding-left: 20px; }
+  .wow_point_boost .list .checkbox {
+    display: inline-block;
+    width: 45%;
+    vertical-align: top; }
+    .wow_point_boost .list .checkbox label span {
+      display: inline-block;
+      vertical-align: top;
+      font-size: 15px; }
+  .wow_point_boost .btns {
+    margin-top: 30px;
+    text-align: right; }
+    .wow_point_boost .btns span.eta {
+      display: inline-block;
+      margin-right: 20px;
+      font-weight: 700;
+      vertical-align: top;
+      margin-top: 10px; }
+    .wow_point_boost .btns button {
+      float: none;
+      display: inline-block;
+      vertical-align: top; }
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .wow_point_boost .cols {
+    display: block;
+    width: initial; }
+    .wow_point_boost .cols .col {
+      display: block;
+      width: initial; }
+      .wow_point_boost .cols .col:nth-child(1) {
+        padding-right: 0px; }
+      .wow_point_boost .cols .col:nth-child(2) {
+        padding-left: 0px;
+        margin-top: 40px; }
+  .wow_point_boost .btns {
+    margin-top: 30px;
+    text-align: center; }
+  .wow_point_boost ul.checked {
+    float: left;
+    width: 60%;
+    padding-right: 30px; }
+  .wow_point_boost .list {
+    float: left;
+    width: 40%;
+    padding-left: 30px; }
+    .wow_point_boost .list .checkbox {
+      display: block;
+      width: initial; } }
+
+@media (max-width: 767px) {
+  .wow_point_boost .radio_list {
+    background: none;
+    margin-bottom: 40px; }
+    .wow_point_boost .radio_list a.item {
+      display: inline-block;
+      background-color: #ffc924;
+      border-radius: 3px;
+      line-height: 50px;
+      padding: 0px 15px;
+      font-size: 16px;
+      font-weight: 700;
+      color: #000;
+      text-decoration: none;
+      transition: .2s;
+      margin-right: 20px; }
+      .wow_point_boost .radio_list a.item:hover {
+        background-color: #ffe400; }
+    .wow_point_boost .radio_list .item label {
+      padding: 0px 20px; }
+  .wow_point_boost .img img {
+    max-width: 265px; }
+  .wow_point_boost .img span {
+    left: 220px;
+    top: 100px; }
+  .wow_point_boost .cols {
+    display: block;
+    width: initial; }
+    .wow_point_boost .cols .col {
+      display: block;
+      width: initial; }
+      .wow_point_boost .cols .col:nth-child(1) {
+        padding-right: 0px; }
+      .wow_point_boost .cols .col:nth-child(2) {
+        padding-left: 0px;
+        margin-top: 60px; }
+  .wow_point_boost .list .checkbox {
+    display: block;
+    width: initial; }
+  .wow_point_boost .btns {
+    margin-top: 0px;
+    text-align: center; }
+    .wow_point_boost .btns span.eta {
+      margin-right: 0;
+      margin-bottom: 20px; }
+    .wow_point_boost .btns button {
+      width: 100%; } }
+
+/* Wow RGB rating */
+.wow_rgb_rating .radio_list {
+  display: inline-block;
+  margin-right: 30px;
+  margin-bottom: 40px; }
+
+.wow_rgb_rating .slide {
+  position: relative; }
+  .wow_rgb_rating .slide .info {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAABxElEQVQ4T41Uy23bUBCc4UfXqIS4AjMVhKogSAGR6GsgAVQFUQcmIMJnUqkgFZiuwHQFdgnO1fxssI8iTTIELV4IvN03u7M784iJr9gGvlA2EHgkPE0RQQ4ipzB14yQbX2P/QH4GXmnJLQh/qkB3JsicmnveJXl71gEZEFvuASwh+CusD25lZ22yxgu78inWAcQnAK9OxVUbN0B9EBFJXccKGSWvU11JGCyLso5IbvpgBqjYrTOAXxVkEZ+CWVrn4Nt2nRgwQebG6Yo6WFDulY7j8PO4E+1W7/bnYViEwbIs5cXQFK7YIgvq/eL4Oxp3U2zXBz1z45P59z8TI38pEwXKSV47Fb+MqxraM0Dn2T6qNFjsNmIqHtOBFNrKc0DNfJv7HwK97X6EmjhFewDUUbN5xSh5uWRjbc47NXm6cNi8duP0++ywu/WrUpuuBkJsfFd5Y2pm/ZU8N07gaihIIFkc05tL6HWChDy4x5P/bhFLMhWXAIlrcz9rkUpuCQRGxDV9lc3QtGcw9RBEIqe2/vRNW1r1N5C6RWPsFsSs/79nxK4j9d08PXlwKiucfEaG0g98Qa3m9VT1xlsiTwBywkqmHrZ/BOcbrL85l1YAAAAASUVORK5CYII=) no-repeat top 3px left;
+    padding-left: 28px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    max-width: 380px;
+    position: absolute;
+    top: -80px;
+    right: 100px; }
+    .wow_rgb_rating .slide .info:before {
+      content: '';
+      width: 84px;
+      height: 90px;
+      background: url("../images/wow_rgb_arr.png") no-repeat;
+      position: absolute;
+      right: -100px; }
+
+.wow_rgb_rating .bg {
+  margin-top: 60px;
+  margin-left: -40px;
+  margin-right: -40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: #f8fafd;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  .wow_rgb_rating .bg p {
+    line-height: 24px; }
+
+.wow_rgb_rating .row .list {
+  float: left; }
+  .wow_rgb_rating .row .list .checkbox {
+    display: inline-block;
+    margin-right: 20px; }
+
+.wow_rgb_rating .row .btns {
+  float: right; }
+  .wow_rgb_rating .row .btns .eta {
+    display: inline-block;
+    margin-right: 20px;
+    font-weight: 700;
+    margin-top: 17px; }
+  .wow_rgb_rating .row .btns button {
+    margin-top: 5px; }
+
+@media (min-width: 980px) and (max-width: 1139px) {
+  .wow_rgb_rating .bg {
+    margin-top: 60px;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #f8fafd;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+    .wow_rgb_rating .bg p {
+      line-height: 24px; }
+  .wow_rgb_rating .row .list {
+    margin-top: 15px; }
+  .wow_rgb_rating .row .btns {
+    width: 230px;
+    margin-top: -30px; }
+    .wow_rgb_rating .row .btns .eta {
+      margin-bottom: 10px;
+      display: block;
+      margin-right: 0;
+      text-align: center; } }
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .wow_rgb_rating .bg {
+    margin-top: 60px;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #f8fafd;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+    .wow_rgb_rating .bg p {
+      line-height: 24px; }
+  .wow_rgb_rating .slide {
+    margin-top: 60px; }
+    .wow_rgb_rating .slide .info {
+      max-width: 260px;
+      top: -120px; }
+      .wow_rgb_rating .slide .info:before {
+        top: 40px; }
+  .wow_rgb_rating .row .list {
+    margin-top: 15px;
+    float: none;
+    text-align: center; }
+  .wow_rgb_rating .row .btns {
+    float: none;
+    text-align: center; }
+    .wow_rgb_rating .row .btns .eta {
+      margin-bottom: 10px;
+      display: block;
+      margin-right: 0;
+      text-align: center; }
+    .wow_rgb_rating .row .btns button {
+      float: none; } }
+
+@media (max-width: 767px) {
+  .wow_rgb_rating .radio_list {
+    display: table;
+    width: 100%; }
+    .wow_rgb_rating .radio_list .item {
+      display: table-cell;
+      vertical-align: top; }
+      .wow_rgb_rating .radio_list .item label {
+        line-height: 25px;
+        padding: 10px;
+        text-align: center;
+        display: block; }
+  .wow_rgb_rating .slide .info {
+    display: none; }
+  .wow_rgb_rating .bg {
+    margin-top: 60px;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #f8fafd;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+    .wow_rgb_rating .bg p {
+      line-height: 24px; }
+  .wow_rgb_rating .row .list {
+    margin-top: 15px;
+    float: none; }
+    .wow_rgb_rating .row .list .checkbox {
+      display: block; }
+  .wow_rgb_rating .row .btns {
+    float: none;
+    text-align: center; }
+    .wow_rgb_rating .row .btns .eta {
+      margin-top: 25px;
+      margin-bottom: 15px;
+      display: block;
+      margin-right: 0;
+      text-align: center; }
+    .wow_rgb_rating .row .btns button {
+      float: none;
+      width: 100%; } }
+
+.wow_rgb_wins .radio_list {
+  display: inline-block;
+  margin-right: 30px;
+  margin-bottom: 40px; }
+
+.wow_rgb_wins .cols {
+  display: table;
+  width: 100%; }
+  .wow_rgb_wins .cols .col {
+    display: table-cell;
+    vertical-align: top; }
+    .wow_rgb_wins .cols .col:nth-child(1) {
+      padding-right: 30px; }
+    .wow_rgb_wins .cols .col:nth-child(2) {
+      padding-left: 30px;
+      width: 530px; }
+    .wow_rgb_wins .cols .col .title {
+      padding: 0; }
+    .wow_rgb_wins .cols .col .row {
+      margin: 40px 0px; }
+      .wow_rgb_wins .cols .col .row span {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px; }
+      .wow_rgb_wins .cols .col .row input[type=text] {
+        display: inline-block;
+        vertical-align: middle;
+        width: 95px;
+        height: 50px;
+        border: 1px solid #ececec;
+        outline: none;
+        border-radius: 3px;
+        text-align: center; }
+    .wow_rgb_wins .cols .col .slide {
+      margin-bottom: 50px; }
+    .wow_rgb_wins .cols .col p {
+      line-height: 24px; }
+    .wow_rgb_wins .cols .col .blocks {
+      margin-top: 40px; }
+      .wow_rgb_wins .cols .col .blocks .block {
+        display: inline-block;
+        width: 234px;
+        vertical-align: top;
+        background-color: #f8fafd;
+        padding: 20px 20px 10px;
+        min-height: 325px; }
+        .wow_rgb_wins .cols .col .blocks .block:nth-child(1) {
+          margin-right: 10px; }
+        .wow_rgb_wins .cols .col .blocks .block:nth-child(2) {
+          margin-left: 10px; }
+        .wow_rgb_wins .cols .col .blocks .block .name {
+          text-align: center;
+          font-size: 20px;
+          font-weight: 700; }
+        .wow_rgb_wins .cols .col .blocks .block table {
+          width: 100%;
+          margin-top: 15px; }
+          .wow_rgb_wins .cols .col .blocks .block table tr td {
+            line-height: 31px;
+            white-space: nowrap; }
+            .wow_rgb_wins .cols .col .blocks .block table tr td:nth-child(2) {
+              font-weight: 700;
+              padding-left: 20px; }
+    .wow_rgb_wins .cols .col p.bold {
+      text-align: center;
+      font-size: 20px;
+      font-weight: 700; }
+
+.wow_rgb_wins .btns {
+  text-align: center; }
+  .wow_rgb_wins .btns button {
+    float: none;
+    min-width: 280px; }
+  .wow_rgb_wins .btns .checkbox {
+    display: inline-block;
+    margin-right: 40px; }
+  .wow_rgb_wins .btns .eta {
+    font-weight: 700; }
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .wow_rgb_wins .cols {
+    display: block;
+    width: initial; }
+    .wow_rgb_wins .cols .col {
+      display: block;
+      width: initial;
+      width: 100%;
+      margin-bottom: 30px; }
+      .wow_rgb_wins .cols .col:nth-child(1) {
+        padding-right: 0px; }
+      .wow_rgb_wins .cols .col:nth-child(2) {
+        padding-left: 0px;
+        width: initial; }
+      .wow_rgb_wins .cols .col .blocks .block {
+        width: 340px;
+        text-align: center; } }
+
+@media (max-width: 767px) {
+  .wow_rgb_wins .radio_list {
+    display: table;
+    width: 100%; }
+    .wow_rgb_wins .radio_list .item {
+      display: table-cell;
+      vertical-align: top; }
+      .wow_rgb_wins .radio_list .item label {
+        line-height: 25px;
+        padding: 10px;
+        text-align: center;
+        display: block; }
+  .wow_rgb_wins .cols {
+    display: block;
+    width: initial; }
+    .wow_rgb_wins .cols .col {
+      display: block;
+      width: initial;
+      width: 100%;
+      margin-bottom: 30px; }
+      .wow_rgb_wins .cols .col:nth-child(1) {
+        padding-right: 0px; }
+      .wow_rgb_wins .cols .col:nth-child(2) {
+        padding-left: 0px;
+        width: initial; }
+      .wow_rgb_wins .cols .col .blocks .block {
+        width: 100%;
+        text-align: center;
+        margin: 0px 0px 20px 0px !important; } }
+
+/*WOW Prestige Rank page*/
+.wow_prestige_rank {
+  padding-bottom: 40px; }
+  .wow_prestige_rank .cols {
+    display: table;
+    width: 100%; }
+    .wow_prestige_rank .cols .col {
+      display: table-cell;
+      vertical-align: top; }
+      .wow_prestige_rank .cols .col:nth-child(1) {
+        width: 280px;
+        padding-right: 40px; }
+        .wow_prestige_rank .cols .col:nth-child(1) .item {
+          position: relative; }
+          .wow_prestige_rank .cols .col:nth-child(1) .item:before {
+            content: '';
+            width: 253px;
+            height: 98px;
+            background: url("../images/ico_hs_to.png") no-repeat;
+            position: absolute;
+            top: 33px;
+            left: 55px;
+            display: block; }
+      .wow_prestige_rank .cols .col:nth-child(2) {
+        width: 280px; }
+      .wow_prestige_rank .cols .col:nth-child(3) {
+        text-align: right; }
+        .wow_prestige_rank .cols .col:nth-child(3) .item {
+          width: initial; }
+        .wow_prestige_rank .cols .col:nth-child(3) .checkbox {
+          display: inline-block;
+          margin-right: 20px; }
+        .wow_prestige_rank .cols .col:nth-child(3) .warning {
+          text-align: left;
+          display: inline-block; }
+      .wow_prestige_rank .cols .col .border {
+        float: right; }
+        .wow_prestige_rank .cols .col .border button {
+          width: 100%; }
+        .wow_prestige_rank .cols .col .border .line {
+          text-align: center; }
+          .wow_prestige_rank .cols .col .border .line .checkbox {
+            margin-right: 40px; }
+      .wow_prestige_rank .cols .col .item {
+        text-align: center;
+        width: 140px;
+        margin: 0 auto;
+        margin-bottom: 40px; }
+        .wow_prestige_rank .cols .col .item img {
+          width: initial;
+          display: inline; }
+        .wow_prestige_rank .cols .col .item .owl-nav .owl-prev {
+          width: 14px;
+          height: 14px;
+          display: block;
+          position: absolute;
+          left: -35px;
+          top: 72px;
+          border-left: 3px solid #27556c;
+          border-top: 3px solid #27556c;
+          transform: rotate(-45deg); }
+          .wow_prestige_rank .cols .col .item .owl-nav .owl-prev.disabled {
+            display: none; }
+          .wow_prestige_rank .cols .col .item .owl-nav .owl-prev:hover {
+            margin-left: -5px;
+            transition: .2s; }
+        .wow_prestige_rank .cols .col .item .owl-nav .owl-next {
+          width: 14px;
+          height: 14px;
+          display: block;
+          position: absolute;
+          right: -35px;
+          top: 72px;
+          border-left: 3px solid #27556c;
+          border-top: 3px solid #27556c;
+          transform: rotate(135deg); }
+          .wow_prestige_rank .cols .col .item .owl-nav .owl-next.disabled {
+            display: none; }
+          .wow_prestige_rank .cols .col .item .owl-nav .owl-next:hover {
+            margin-right: -5px;
+            transition: .2s; }
+        .wow_prestige_rank .cols .col .item .bg {
+          float: right;
+          background-color: #f6ebca;
+          max-width: 435px;
+          text-align: left;
+          border-radius: 5px;
+          padding-right: 255px;
+          padding-left: 35px;
+          padding-top: 34px;
+          padding-bottom: 34px;
+          font-weight: 700;
+          line-height: 22px;
+          margin-top: 30px;
+          position: relative;
+          margin-bottom: 125px; }
+          .wow_prestige_rank .cols .col .item .bg:before {
+            content: '';
+            width: 200px;
+            height: 205px;
+            background: url("../images/ico_hs_cards.png") no-repeat top center;
+            position: absolute;
+            right: 26px;
+            top: -42px; }
+
+@media (min-width: 980px) and (max-width: 1139px) {
+  .wow_prestige_rank .cols .col .item .bg {
+    width: 375px; }
+  .wow_prestige_rank .cols .col .item .bg {
+    margin-bottom: 85px; } }
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .wow_prestige_rank .cols {
+    display: block; }
+    .wow_prestige_rank .cols .col {
+      display: block;
+      width: 50% !important;
+      float: left;
+      margin-bottom: 60px; }
+      .wow_prestige_rank .cols .col:nth-child(3) {
+        float: none;
+        width: 100% !important;
+        margin-top: 100px;
+        clear: both;
+        text-align: center;
+        margin-bottom: 20px; }
+        .wow_prestige_rank .cols .col:nth-child(3) .item {
+          margin-bottom: 70px; }
+        .wow_prestige_rank .cols .col:nth-child(3) .clearfix:nth-child(2) {
+          border-bottom: 1px solid #e8e8e8;
+          margin: 40px 0px; }
+        .wow_prestige_rank .cols .col:nth-child(3) button {
+          float: none; }
+      .wow_prestige_rank .cols .col .border {
+        float: none; }
+        .wow_prestige_rank .cols .col .border .clearfix {
+          border: none !important;
+          margin: 0 !important; }
+        .wow_prestige_rank .cols .col .border button {
+          width: initial;
+          padding: 0px 60px; }
+  .wow_prestige_rank .cols .col .item .bg {
+    float: none;
+    margin: 0 auto; } }
+
+@media (max-width: 767px) {
+  .wow_prestige_rank .cols {
+    display: block; }
+    .wow_prestige_rank .cols .col {
+      display: block;
+      width: 100% !important;
+      margin-bottom: 60px; }
+      .wow_prestige_rank .cols .col:nth-child(1) {
+        padding: 0; }
+        .wow_prestige_rank .cols .col:nth-child(1) .item:before {
+          transform: rotate(90deg);
+          top: 133px;
+          left: -56px; }
+        .wow_prestige_rank .cols .col:nth-child(1) .drop {
+          position: relative;
+          top: 200px; }
+      .wow_prestige_rank .cols .col:nth-child(2) {
+        margin-top: -180px; }
+        .wow_prestige_rank .cols .col:nth-child(2) .drop {
+          margin-top: 150px; }
+      .wow_prestige_rank .cols .col:nth-child(3) {
+        float: none;
+        width: 100% !important;
+        margin-top: 10px;
+        clear: both;
+        text-align: center;
+        margin-bottom: 20px; }
+        .wow_prestige_rank .cols .col:nth-child(3) .item {
+          margin-bottom: 70px; }
+        .wow_prestige_rank .cols .col:nth-child(3) .clearfix:nth-child(2) {
+          border-bottom: 1px solid #e8e8e8;
+          margin: 40px 0px; }
+        .wow_prestige_rank .cols .col:nth-child(3) button {
+          float: none; }
+  .wow_prestige_rank .cols .col .item .bg {
+    float: none;
+    margin: 0 auto;
+    padding-right: 145px;
+    padding-left: 20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    border-radius: 0px; }
+    .wow_prestige_rank .cols .col .item .bg:before {
+      width: 151px;
+      height: 158px;
+      background-size: cover;
+      right: 10px;
+      top: -28px; } }
+
+/* Wow Vicious saddle Page*/
+.wow_vicious_saddle {
+  padding-bottom: 40px; }
+  .wow_vicious_saddle .title2 {
+    font-size: 22px;
+    font-weight: 700; }
+  .wow_vicious_saddle .cols .col1 {
+    float: left;
+    width: 740px; }
+    .wow_vicious_saddle .cols .col1 .slider1 {
+      margin: 40px 0px; }
+    .wow_vicious_saddle .cols .col1 .owl-prev {
+      width: 24px;
+      height: 24px;
+      border-left: 3px solid #27556c;
+      border-top: 3px solid #27556c;
+      transform: rotate(-45deg);
+      transition: .2s;
+      position: absolute;
+      top: 50px;
+      left: -10px; }
+      .wow_vicious_saddle .cols .col1 .owl-prev:hover {
+        left: -13px; }
+    .wow_vicious_saddle .cols .col1 .owl-next {
+      width: 24px;
+      height: 24px;
+      border-left: 3px solid #27556c;
+      border-top: 3px solid #27556c;
+      transform: rotate(135deg);
+      transition: .2s;
+      position: absolute;
+      top: 50px;
+      right: -10px; }
+      .wow_vicious_saddle .cols .col1 .owl-next:hover {
+        right: -13px; }
+    .wow_vicious_saddle .cols .col1 .item {
+      text-align: center;
+      position: relative;
+      z-index: 2;
+      padding-top: 8px; }
+      .wow_vicious_saddle .cols .col1 .item img {
+        max-width: 100%;
+        width: initial;
+        display: inline-block; }
+      .wow_vicious_saddle .cols .col1 .item span {
+        display: inline-block;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 18px;
+        margin-top: 10px;
+        display: none; }
+    .wow_vicious_saddle .cols .col1 .center:before {
+      content: '';
+      display: block;
+      width: 116px;
+      height: 116px;
+      background-color: #f85757;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      z-index: 0; }
+    .wow_vicious_saddle .cols .col1 .center .item span {
+      display: inline-block; }
+    .wow_vicious_saddle .cols .col1 .slider2 .center:before {
+      background-color: #6076ff; }
+  .wow_vicious_saddle .cols .col2 {
+    width: 262px;
+    float: right;
+    padding: 30px;
+    background-color: #f8fafd;
+    margin-top: 60px; }
+    .wow_vicious_saddle .cols .col2 .name {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 20px; }
+    .wow_vicious_saddle .cols .col2 ul.checked {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      margin-top: -10px; }
+      .wow_vicious_saddle .cols .col2 ul.checked li {
+        color: #000;
+        font-size: 16px;
+        line-height: 22px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 27px;
+        background: url("../images/ico_ul.checked.png") no-repeat 0px 13px; }
+  .wow_vicious_saddle .border {
+    margin-top: 40px; }
+  .wow_vicious_saddle .blocks {
+    margin-top: 60px; }
+    .wow_vicious_saddle .blocks .warning {
+      font-size: 16px;
+      line-height: 24px; }
+    .wow_vicious_saddle .blocks .block {
+      width: 33.3333%;
+      float: left; }
+      .wow_vicious_saddle .blocks .block:nth-child(2) {
+        padding: 0px 20px; }
+      .wow_vicious_saddle .blocks .block .eta {
+        display: inline-block;
+        font-weight: 700;
+        margin-top: 10px; }
+
+@media (min-width: 980px) and (max-width: 1139px) {
+  .wow_vicious_saddle .cols .col1 {
+    width: 650px; }
+  .wow_vicious_saddle .blocks .block:nth-child(3) .eta {
+    display: block;
+    margin-right: 60px;
+    margin-bottom: 10px;
+    text-align: center; } }
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .wow_vicious_saddle .cols .col1 {
+    float: none;
+    width: 100%; }
+  .wow_vicious_saddle .cols .col2 {
+    width: 100%;
+    float: none;
+    padding: 30px;
+    background-color: #f8fafd;
+    margin-top: 60px; }
+    .wow_vicious_saddle .cols .col2 ul.checked li {
+      display: block;
+      width: 25%;
+      float: left;
+      padding-right: 20px; }
+  .wow_vicious_saddle .blocks .block {
+    width: 50%;
+    float: left; }
+    .wow_vicious_saddle .blocks .block:nth-child(2) {
+      padding: 0px 20px; }
+    .wow_vicious_saddle .blocks .block:nth-child(3) {
+      padding: 0px 20px;
+      width: 100%;
+      text-align: right;
+      margin-top: 30px; }
+    .wow_vicious_saddle .blocks .block .eta {
+      display: inline-block;
+      font-weight: 700;
+      margin-top: 10px;
+      margin-right: 20px; } }
+
+@media (max-width: 767px) {
+  .wow_vicious_saddle .cols .col1 {
+    float: none;
+    width: initial;
+    margin-left: -20px;
+    margin-right: -20px; }
+  .wow_vicious_saddle .cols .col2 {
+    width: 100%;
+    float: none;
+    padding: 30px;
+    background-color: #f8fafd;
+    margin-top: 60px; }
+    .wow_vicious_saddle .cols .col2 ul.checked li {
+      display: inline-block;
+      padding-right: 20px; }
+  .wow_vicious_saddle .blocks .block {
+    width: 100%;
+    float: none;
+    margin-bottom: 30px; }
+    .wow_vicious_saddle .blocks .block:nth-child(2) {
+      padding: 0px 20px; }
+    .wow_vicious_saddle .blocks .block:nth-child(3) {
+      padding: 0px 20px;
+      width: 100%;
+      text-align: right;
+      margin-top: 0px; }
+    .wow_vicious_saddle .blocks .block .eta {
+      display: block;
+      font-weight: 700;
+      margin-bottom: 10px;
+      margin-right: 0px;
+      text-align: center; }
+    .wow_vicious_saddle .blocks .block button {
+      width: 100%;
+      float: none; } }
+
 /*# sourceMappingURL=main.css.map*/
