@@ -530,6 +530,63 @@ $(document).ready(function() {
         },
     });
     /* */
+
+    /* overwatch_level_boosting_slider */
+    $("#overwatch_level_boosting_slider").ionRangeSlider({
+        hide_min_max: true,
+        keyboard: true,
+        min: 0,
+        max: 25,
+        type: 'double',
+        step: 1,
+        prefix: "level ",
+        grid: true,
+        grid_num: 8,
+        grid_snap: false,
+        onChange: function (data) {
+            var price = parseFloat((data.from*4.9).toFixed(3));
+            $('button[type=submit] span').html('€'+price);
+        },
+    });
+    /* */
+
+    /* overwatch_placement_matches_slider */
+    $("#overwatch_placement_matches_slider").ionRangeSlider({
+        hide_min_max: true,
+        keyboard: true,
+        min: 0,
+        max: 10,
+        type: 'single',
+        step: 1,
+        prefix: "Match ",
+        grid: true,
+        grid_num: 10,
+        grid_snap: false,
+        onChange: function (data) {
+            var price = parseFloat((data.from*4.9).toFixed(3));
+            $('button[type=submit] span').html('€'+price);
+        },
+    });
+    /* */
+    /* overwatch_solo_boost_slider */
+    $("#overwatch_solo_boost_slider").ionRangeSlider({
+        hide_min_max: true,
+        keyboard: true,
+        min: 0,
+        max: 25,
+        type: 'single',
+        step: 1,
+        prefix: "Match ",
+        grid: true,
+        grid_num: 10,
+        grid_snap: false,
+        onChange: function (data) {
+            var price = parseFloat((data.from*4.9).toFixed(3));
+            $('button[type=submit] span').html('€'+price);
+        },
+    });
+    /* */
+    
 });
 
 

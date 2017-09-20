@@ -166,6 +166,9 @@ body#hardstone {
 body#wow {
   background: url("../images/wow_bg.png") no-repeat top center; }
 
+body#overwatch {
+  background: url("../images/wow_bg.png") no-repeat top center; }
+
 header {
   padding-top: 59px; }
   header .top {
@@ -5062,5 +5065,384 @@ footer {
     .wow_vicious_saddle .blocks .block button {
       width: 100%;
       float: none; } }
+
+/*Overwatch Leveling Boost page*/
+.overwatch_level_boosting {
+  padding-bottom: 40px; }
+  .overwatch_level_boosting .cols {
+    display: table;
+    width: 100%; }
+    .overwatch_level_boosting .cols .col {
+      display: table-cell;
+      vertical-align: top; }
+      .overwatch_level_boosting .cols .col:nth-child(1) {
+        padding-right: 30px; }
+      .overwatch_level_boosting .cols .col:nth-child(2) {
+        width: 354px;
+        background-color: #f6ebca;
+        border-radius: 3px;
+        text-align: center;
+        padding: 35px; }
+        .overwatch_level_boosting .cols .col:nth-child(2) button {
+          float: none;
+          width: 100%; }
+        .overwatch_level_boosting .cols .col:nth-child(2) p {
+          line-height: 24px; }
+  .overwatch_level_boosting .radio_list {
+    margin-right: 30px; }
+    .overwatch_level_boosting .radio_list .item label img {
+      opacity: 0.3;
+      vertical-align: middle; }
+    .overwatch_level_boosting .radio_list .item input:checked ~ label img {
+      opacity: 1; }
+  .overwatch_level_boosting .slide {
+    margin-top: 40px; }
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .overwatch_level_boosting .cols {
+    display: block;
+    width: initial; }
+    .overwatch_level_boosting .cols .col {
+      display: block;
+      width: initial; }
+      .overwatch_level_boosting .cols .col:nth-child(1) {
+        padding-right: 0px; }
+      .overwatch_level_boosting .cols .col:nth-child(2) {
+        width: initial;
+        margin-top: 60px;
+        background-color: #f6ebca;
+        border-radius: 3px;
+        text-align: center;
+        padding: 20px 20px; }
+        .overwatch_level_boosting .cols .col:nth-child(2) button {
+          display: inline-block;
+          vertical-align: middle;
+          width: initial;
+          margin-right: 20px; }
+        .overwatch_level_boosting .cols .col:nth-child(2) .img {
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 40px; }
+          .overwatch_level_boosting .cols .col:nth-child(2) .img p {
+            display: block;
+            margin-top: 0; }
+        .overwatch_level_boosting .cols .col:nth-child(2) p {
+          display: inline-block;
+          max-width: 200px;
+          vertical-align: middle; }
+  .overwatch_level_boosting .radio_list {
+    margin-right: 30px; }
+    .overwatch_level_boosting .radio_list .item label img {
+      opacity: 0.3;
+      vertical-align: middle; }
+    .overwatch_level_boosting .radio_list .item input:checked ~ label img {
+      opacity: 1; }
+  .overwatch_level_boosting .slide {
+    margin-top: 40px; } }
+
+@media (max-width: 767px) {
+  .overwatch_level_boosting .cols {
+    display: block;
+    width: initial; }
+    .overwatch_level_boosting .cols .col {
+      display: block;
+      width: initial; }
+      .overwatch_level_boosting .cols .col:nth-child(1) {
+        padding-right: 0px; }
+        .overwatch_level_boosting .cols .col:nth-child(1) p {
+          line-height: 24px; }
+      .overwatch_level_boosting .cols .col:nth-child(2) {
+        width: initial;
+        margin-top: 60px;
+        background-color: #f6ebca;
+        border-radius: 3px;
+        text-align: center;
+        padding: 20px 10px; }
+        .overwatch_level_boosting .cols .col:nth-child(2) button {
+          display: inline-block;
+          vertical-align: middle;
+          width: initial;
+          margin-right: 20px;
+          width: 100%; }
+        .overwatch_level_boosting .cols .col:nth-child(2) .img {
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 0px; }
+          .overwatch_level_boosting .cols .col:nth-child(2) .img p {
+            display: block;
+            margin-top: 0; }
+        .overwatch_level_boosting .cols .col:nth-child(2) p {
+          display: inline-block;
+          max-width: 200px;
+          vertical-align: middle; }
+  .overwatch_level_boosting .radio_list {
+    display: table;
+    width: 100%;
+    margin-bottom: 20px; }
+    .overwatch_level_boosting .radio_list .item {
+      display: table-cell;
+      vertical-align: top; }
+      .overwatch_level_boosting .radio_list .item label {
+        line-height: 25px;
+        padding: 10px;
+        text-align: center;
+        display: block; }
+  .overwatch_level_boosting .slide {
+    margin-top: 40px; } }
+
+/*Overwatch Leveling Boost page*/
+.overwatch_level_boosting {
+  padding-bottom: 40px; }
+  .overwatch_level_boosting .cols {
+    display: table;
+    width: 100%; }
+    .overwatch_level_boosting .cols .col {
+      display: table-cell;
+      vertical-align: top; }
+      .overwatch_level_boosting .cols .col:nth-child(1) {
+        padding-right: 30px; }
+      .overwatch_level_boosting .cols .col:nth-child(2) {
+        width: 354px;
+        background-color: #f6ebca;
+        border-radius: 3px;
+        text-align: center;
+        padding: 35px; }
+        .overwatch_level_boosting .cols .col:nth-child(2) button {
+          float: none;
+          width: 100%; }
+        .overwatch_level_boosting .cols .col:nth-child(2) p {
+          line-height: 24px; }
+  .overwatch_level_boosting .radio_list {
+    margin-right: 30px; }
+    .overwatch_level_boosting .radio_list .item label img {
+      opacity: 0.3;
+      vertical-align: middle; }
+    .overwatch_level_boosting .radio_list .item input:checked ~ label img {
+      opacity: 1; }
+  .overwatch_level_boosting .slide {
+    margin-top: 40px; }
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .overwatch_level_boosting .cols {
+    display: block;
+    width: initial; }
+    .overwatch_level_boosting .cols .col {
+      display: block;
+      width: initial; }
+      .overwatch_level_boosting .cols .col:nth-child(1) {
+        padding-right: 0px; }
+      .overwatch_level_boosting .cols .col:nth-child(2) {
+        width: initial;
+        margin-top: 60px;
+        background-color: #f6ebca;
+        border-radius: 3px;
+        text-align: center;
+        padding: 20px 20px; }
+        .overwatch_level_boosting .cols .col:nth-child(2) button {
+          display: inline-block;
+          vertical-align: middle;
+          width: initial;
+          margin-right: 20px; }
+        .overwatch_level_boosting .cols .col:nth-child(2) .img {
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 40px; }
+          .overwatch_level_boosting .cols .col:nth-child(2) .img p {
+            display: block;
+            margin-top: 0; }
+        .overwatch_level_boosting .cols .col:nth-child(2) p {
+          display: inline-block;
+          max-width: 200px;
+          vertical-align: middle; }
+  .overwatch_level_boosting .radio_list {
+    margin-right: 30px; }
+    .overwatch_level_boosting .radio_list .item label img {
+      opacity: 0.3;
+      vertical-align: middle; }
+    .overwatch_level_boosting .radio_list .item input:checked ~ label img {
+      opacity: 1; }
+  .overwatch_level_boosting .slide {
+    margin-top: 40px; } }
+
+@media (max-width: 767px) {
+  .overwatch_level_boosting .cols {
+    display: block;
+    width: initial; }
+    .overwatch_level_boosting .cols .col {
+      display: block;
+      width: initial; }
+      .overwatch_level_boosting .cols .col:nth-child(1) {
+        padding-right: 0px; }
+        .overwatch_level_boosting .cols .col:nth-child(1) p {
+          line-height: 24px; }
+      .overwatch_level_boosting .cols .col:nth-child(2) {
+        width: initial;
+        margin-top: 60px;
+        background-color: #f6ebca;
+        border-radius: 3px;
+        text-align: center;
+        padding: 20px 10px; }
+        .overwatch_level_boosting .cols .col:nth-child(2) button {
+          display: inline-block;
+          vertical-align: middle;
+          width: initial;
+          margin-right: 20px;
+          width: 100%; }
+        .overwatch_level_boosting .cols .col:nth-child(2) .img {
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 0px; }
+          .overwatch_level_boosting .cols .col:nth-child(2) .img p {
+            display: block;
+            margin-top: 0; }
+        .overwatch_level_boosting .cols .col:nth-child(2) p {
+          display: inline-block;
+          max-width: 200px;
+          vertical-align: middle; }
+  .overwatch_level_boosting .radio_list {
+    display: table;
+    width: 100%;
+    margin-bottom: 20px; }
+    .overwatch_level_boosting .radio_list .item {
+      display: table-cell;
+      vertical-align: top; }
+      .overwatch_level_boosting .radio_list .item label {
+        line-height: 25px;
+        padding: 10px;
+        text-align: center;
+        display: block; }
+  .overwatch_level_boosting .slide {
+    margin-top: 40px; } }
+
+/*Overwatch Placement Matches page*/
+.overwatch_placement_matches {
+  padding-bottom: 40px; }
+  .overwatch_placement_matches .cols {
+    display: table;
+    width: 100%; }
+    .overwatch_placement_matches .cols .col {
+      display: table-cell;
+      vertical-align: top; }
+      .overwatch_placement_matches .cols .col:nth-child(1) {
+        padding-right: 30px; }
+      .overwatch_placement_matches .cols .col:nth-child(2) {
+        width: 354px;
+        background-color: #f6ebca;
+        border-radius: 3px;
+        text-align: center;
+        padding: 35px; }
+        .overwatch_placement_matches .cols .col:nth-child(2) button {
+          float: none;
+          width: 100%; }
+        .overwatch_placement_matches .cols .col:nth-child(2) p {
+          line-height: 24px; }
+  .overwatch_placement_matches .radio_list {
+    margin-right: 30px; }
+    .overwatch_placement_matches .radio_list .item label img {
+      opacity: 0.3;
+      vertical-align: middle; }
+    .overwatch_placement_matches .radio_list .item input:checked ~ label img {
+      opacity: 1; }
+  .overwatch_placement_matches .checkbox {
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 0px;
+    margin-bottom: 20px; }
+    .overwatch_placement_matches .checkbox label:before {
+      background: #fff; }
+  .overwatch_placement_matches .slide {
+    margin-top: 40px; }
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .overwatch_placement_matches .cols {
+    display: block;
+    width: initial; }
+    .overwatch_placement_matches .cols .col {
+      display: block;
+      width: initial; }
+      .overwatch_placement_matches .cols .col:nth-child(1) {
+        padding-right: 0px; }
+      .overwatch_placement_matches .cols .col:nth-child(2) {
+        width: initial;
+        margin-top: 60px;
+        background-color: #f6ebca;
+        border-radius: 3px;
+        text-align: center;
+        padding: 20px 20px; }
+        .overwatch_placement_matches .cols .col:nth-child(2) button {
+          display: inline-block;
+          vertical-align: middle;
+          width: initial;
+          margin-right: 20px; }
+        .overwatch_placement_matches .cols .col:nth-child(2) .img {
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 40px; }
+          .overwatch_placement_matches .cols .col:nth-child(2) .img p {
+            display: block;
+            margin-top: 0; }
+        .overwatch_placement_matches .cols .col:nth-child(2) p {
+          display: inline-block;
+          max-width: 200px;
+          vertical-align: middle; }
+  .overwatch_placement_matches .radio_list {
+    margin-right: 30px; }
+    .overwatch_placement_matches .radio_list .item label img {
+      opacity: 0.3;
+      vertical-align: middle; }
+    .overwatch_placement_matches .radio_list .item input:checked ~ label img {
+      opacity: 1; }
+  .overwatch_placement_matches .slide {
+    margin-top: 40px; } }
+
+@media (max-width: 767px) {
+  .overwatch_placement_matches .cols {
+    display: block;
+    width: initial; }
+    .overwatch_placement_matches .cols .col {
+      display: block;
+      width: initial; }
+      .overwatch_placement_matches .cols .col:nth-child(1) {
+        padding-right: 0px; }
+        .overwatch_placement_matches .cols .col:nth-child(1) p {
+          line-height: 24px; }
+      .overwatch_placement_matches .cols .col:nth-child(2) {
+        width: initial;
+        margin-top: 60px;
+        background-color: #f6ebca;
+        border-radius: 3px;
+        text-align: center;
+        padding: 20px 10px; }
+        .overwatch_placement_matches .cols .col:nth-child(2) button {
+          display: inline-block;
+          vertical-align: middle;
+          width: initial;
+          margin-right: 20px;
+          width: 100%; }
+        .overwatch_placement_matches .cols .col:nth-child(2) .img {
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 0px; }
+          .overwatch_placement_matches .cols .col:nth-child(2) .img p {
+            display: block;
+            margin-top: 0; }
+        .overwatch_placement_matches .cols .col:nth-child(2) p {
+          display: inline-block;
+          max-width: 200px;
+          vertical-align: middle; }
+  .overwatch_placement_matches .radio_list {
+    display: table;
+    width: 100%;
+    margin-bottom: 20px; }
+    .overwatch_placement_matches .radio_list .item {
+      display: table-cell;
+      vertical-align: top; }
+      .overwatch_placement_matches .radio_list .item label {
+        line-height: 25px;
+        padding: 10px;
+        text-align: center;
+        display: block; }
+  .overwatch_placement_matches .slide {
+    margin-top: 40px; } }
 
 /*# sourceMappingURL=main.css.map*/

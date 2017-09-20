@@ -199,6 +199,9 @@ body#hardstone{
 body#wow{
     background: url('../images/wow_bg.png') no-repeat top  center;
 }
+body#overwatch{
+    background: url('../images/wow_bg.png') no-repeat top  center;
+}
 
 
 
@@ -6781,6 +6784,544 @@ footer{
 @media (max-width: 330px) {}
 
 
+/*Overwatch Leveling Boost page*/
+.overwatch_level_boosting{
+    padding-bottom: 40px;
+    .cols{
+        display: table;
+        width: 100%;
+        .col{
+            display: table-cell;
+            vertical-align: top;
+            &:nth-child(1){
+                padding-right: 30px;
+            }
+            &:nth-child(2){
+                width: 354px;
+                background-color: #f6ebca;
+                border-radius: 3px;
+                text-align: center;
+                padding: 35px;
+                button{
+                    float: none;
+                    width: 100%;
+                }
+                p{
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+    .radio_list{
+        margin-right: 30px;
+        .item{
+            label{
+                img{
+                    opacity: 0.3;
+                    vertical-align: middle;
+                }
+            }
+            input:checked ~ label{
+                img{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    .slide{
+        margin-top: 40px;
+    }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+    .overwatch_level_boosting{
+        .cols{
+            display: block;
+            width: initial;
+            .col{
+                display: block;
+                width: initial;
+                &:nth-child(1){
+                    padding-right: 0px;
+                }
+                &:nth-child(2){
+                    width: initial;
+                    margin-top: 60px;
+                    background-color: #f6ebca;
+                    border-radius: 3px;
+                    text-align: center;
+                    padding: 20px 20px;
+                    button{
+                        display: inline-block;
+                        vertical-align: middle;
+                        width: initial;
+                        margin-right: 20px;
+                    }
+                    .img{
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin-right: 40px;
+                        p{
+                            display: block;
+                            margin-top: 0;
+                        }
+                    }
+                    p{
+                        display: inline-block;
+                        max-width: 200px;
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+        .radio_list{
+            margin-right: 30px;
+            .item{
+                label{
+                    img{
+                        opacity: 0.3;
+                        vertical-align: middle;
+                    }
+                }
+                input:checked ~ label{
+                    img{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        .slide{
+            margin-top: 40px;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .overwatch_level_boosting{
+        .cols{
+            display: block;
+            width: initial;
+            .col{
+                display: block;
+                width: initial;
+                &:nth-child(1){
+                    padding-right: 0px;
+                    p{
+                        line-height: 24px;
+                    }
+                }
+                &:nth-child(2){
+                    width: initial;
+                    margin-top: 60px;
+                    background-color: #f6ebca;
+                    border-radius: 3px;
+                    text-align: center;
+                    padding: 20px 10px;
+                    button{
+                        display: inline-block;
+                        vertical-align: middle;
+                        width: initial;
+                        margin-right: 20px;
+                        width: 100%;
+                    }
+                    .img{
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin-right: 0px;
+                        p{
+                            display: block;
+                            margin-top: 0;
+                        }
+                    }
+                    p{
+                        display: inline-block;
+                        max-width: 200px;
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+        .radio_list{
+            display: table;
+            width: 100%;
+            margin-bottom: 20px;
+            .item{
+                display: table-cell;
+                vertical-align: top;
+                label{
+                    line-height: 25px;
+                    padding: 10px;
+                    text-align: center;
+                    display: block;
+                }
+            }
+        }
+        .slide{
+            margin-top: 40px;
+        }
+    }
+}
+
+
+/*Overwatch Leveling Boost page*/
+.overwatch_level_boosting{
+    padding-bottom: 40px;
+    .cols{
+        display: table;
+        width: 100%;
+        .col{
+            display: table-cell;
+            vertical-align: top;
+            &:nth-child(1){
+                padding-right: 30px;
+            }
+            &:nth-child(2){
+                width: 354px;
+                background-color: #f6ebca;
+                border-radius: 3px;
+                text-align: center;
+                padding: 35px;
+                button{
+                    float: none;
+                    width: 100%;
+                }
+                p{
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+    .radio_list{
+        margin-right: 30px;
+        .item{
+            label{
+                img{
+                    opacity: 0.3;
+                    vertical-align: middle;
+                }
+            }
+            input:checked ~ label{
+                img{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    .slide{
+        margin-top: 40px;
+    }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+    .overwatch_level_boosting{
+        .cols{
+            display: block;
+            width: initial;
+            .col{
+                display: block;
+                width: initial;
+                &:nth-child(1){
+                    padding-right: 0px;
+                }
+                &:nth-child(2){
+                    width: initial;
+                    margin-top: 60px;
+                    background-color: #f6ebca;
+                    border-radius: 3px;
+                    text-align: center;
+                    padding: 20px 20px;
+                    button{
+                        display: inline-block;
+                        vertical-align: middle;
+                        width: initial;
+                        margin-right: 20px;
+                    }
+                    .img{
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin-right: 40px;
+                        p{
+                            display: block;
+                            margin-top: 0;
+                        }
+                    }
+                    p{
+                        display: inline-block;
+                        max-width: 200px;
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+        .radio_list{
+            margin-right: 30px;
+            .item{
+                label{
+                    img{
+                        opacity: 0.3;
+                        vertical-align: middle;
+                    }
+                }
+                input:checked ~ label{
+                    img{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        .slide{
+            margin-top: 40px;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .overwatch_level_boosting{
+        .cols{
+            display: block;
+            width: initial;
+            .col{
+                display: block;
+                width: initial;
+                &:nth-child(1){
+                    padding-right: 0px;
+                    p{
+                        line-height: 24px;
+                    }
+                }
+                &:nth-child(2){
+                    width: initial;
+                    margin-top: 60px;
+                    background-color: #f6ebca;
+                    border-radius: 3px;
+                    text-align: center;
+                    padding: 20px 10px;
+                    button{
+                        display: inline-block;
+                        vertical-align: middle;
+                        width: initial;
+                        margin-right: 20px;
+                        width: 100%;
+                    }
+                    .img{
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin-right: 0px;
+                        p{
+                            display: block;
+                            margin-top: 0;
+                        }
+                    }
+                    p{
+                        display: inline-block;
+                        max-width: 200px;
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+        .radio_list{
+            display: table;
+            width: 100%;
+            margin-bottom: 20px;
+            .item{
+                display: table-cell;
+                vertical-align: top;
+                label{
+                    line-height: 25px;
+                    padding: 10px;
+                    text-align: center;
+                    display: block;
+                }
+            }
+        }
+        .slide{
+            margin-top: 40px;
+        }
+    }
+}
+
+
+/*Overwatch Placement Matches page*/
+.overwatch_placement_matches{
+    padding-bottom: 40px;
+    .cols{
+        display: table;
+        width: 100%;
+        .col{
+            display: table-cell;
+            vertical-align: top;
+            &:nth-child(1){
+                padding-right: 30px;
+            }
+            &:nth-child(2){
+                width: 354px;
+                background-color: #f6ebca;
+                border-radius: 3px;
+                text-align: center;
+                padding: 35px;
+                button{
+                    float: none;
+                    width: 100%;
+                }
+                p{
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+    .radio_list{
+        margin-right: 30px;
+        .item{
+            label{
+                img{
+                    opacity: 0.3;
+                    vertical-align: middle;
+                }
+            }
+            input:checked ~ label{
+                img{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    .checkbox{
+        display: inline-block;
+        margin-right: 20px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        label:before{
+            background: #fff;
+        }
+    }
+    .slide{
+        margin-top: 40px;
+    }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+    .overwatch_placement_matches{
+        .cols{
+            display: block;
+            width: initial;
+            .col{
+                display: block;
+                width: initial;
+                &:nth-child(1){
+                    padding-right: 0px;
+                }
+                &:nth-child(2){
+                    width: initial;
+                    margin-top: 60px;
+                    background-color: #f6ebca;
+                    border-radius: 3px;
+                    text-align: center;
+                    padding: 20px 20px;
+                    button{
+                        display: inline-block;
+                        vertical-align: middle;
+                        width: initial;
+                        margin-right: 20px;
+                    }
+                    .img{
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin-right: 40px;
+                        p{
+                            display: block;
+                            margin-top: 0;
+                        }
+                    }
+                    p{
+                        display: inline-block;
+                        max-width: 200px;
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+        .radio_list{
+            margin-right: 30px;
+            .item{
+                label{
+                    img{
+                        opacity: 0.3;
+                        vertical-align: middle;
+                    }
+                }
+                input:checked ~ label{
+                    img{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        .slide{
+            margin-top: 40px;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .overwatch_placement_matches{
+        .cols{
+            display: block;
+            width: initial;
+            .col{
+                display: block;
+                width: initial;
+                &:nth-child(1){
+                    padding-right: 0px;
+                    p{
+                        line-height: 24px;
+                    }
+                }
+                &:nth-child(2){
+                    width: initial;
+                    margin-top: 60px;
+                    background-color: #f6ebca;
+                    border-radius: 3px;
+                    text-align: center;
+                    padding: 20px 10px;
+                    button{
+                        display: inline-block;
+                        vertical-align: middle;
+                        width: initial;
+                        margin-right: 20px;
+                        width: 100%;
+                    }
+                    .img{
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin-right: 0px;
+                        p{
+                            display: block;
+                            margin-top: 0;
+                        }
+                    }
+                    p{
+                        display: inline-block;
+                        max-width: 200px;
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+        .radio_list{
+            display: table;
+            width: 100%;
+            margin-bottom: 20px;
+            .item{
+                display: table-cell;
+                vertical-align: top;
+                label{
+                    line-height: 25px;
+                    padding: 10px;
+                    text-align: center;
+                    display: block;
+                }
+            }
+        }
+        .slide{
+            margin-top: 40px;
+        }
+    }
+}
 
 
 
